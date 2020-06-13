@@ -7,20 +7,23 @@ import time, csv, re
 
 
 keywords = []
+global account_scraped
+account_scraped = 0
 with open('keyword.csv', newline='') as key:
     print("Reading keyword.csv")
     key_data = csv.reader(key)
     for row in key_data:
         keywords.append(row)
+
+
 def search(kword):
-    tgt_data = []
+    target_addr = []
     search_bar = driver.find_element_by_css_selector('input[type="text"]')
     search_bar.send_keys(kword)
     print("Starts searching " + str(kword))
     acc_pr = ec.presence_of_element_located((By.CSS_SELECTOR, 'a.yCE8d'))
     wdw(driver, 15).until(acc_pr)
-    time.sleep(3)
-    target_addr = []
+    time.sleep(5)
     account_lists = driver.find_elements_by_css_selector('a.yCE8d')
     for a in account_lists:
         target_addr.append(a.get_attribute('href'))
@@ -30,6 +33,7 @@ def search(kword):
             driver.get(addr)
             bio_pr = ec.presence_of_element_located((By.CSS_SELECTOR, 'div.-vDIg'))
             wdw(driver, 15).until(bio_pr)
+            time.sleep(3)
             try:
                 bio = driver.find_element_by_css_selector('div.-vDIg')
                 rm_d = re.sub(r'\D', '', bio.text)
@@ -42,17 +46,21 @@ def search(kword):
                     raw_data.append(acc_name.text)
                     raw_data.append(prog.group())
                     print(raw_data)
-                    tgt_data.append(raw_data)
-                    print(tgt_data)
-                    time.sleep(1)
-                    driver.find_element_by_css_selector('div.nZSzR button').click()
-                    time.sleep(1)
+                    with open('instagram_data.csv', 'a+', newline='') as append_data:
+                        append_this = csv.writer(append_data)
+                        append_this.writerow(raw_data)
+                    time.sleep(3)
+                    global account_scraped
+                    account_scraped += 1
+                    print(account_scraped)
             except IndexError:
                 pass
             except ValueError:
                 pass
         else:
             pass
+
+
 driver = webdriver.Firefox()
 driver.get("https://www.instagram.com/accounts/login/")
 login = ec.presence_of_element_located((By.NAME, 'username'))
@@ -70,6 +78,7 @@ for i in password:
 pword_field.send_keys(Keys.ENTER)
 print("Successfully logged in.")
 time.sleep(10)
+driver.get("https://www.instagram.com/")
 not_now = driver.find_elements_by_css_selector('div[role="dialog"] div div div button')
 driver.execute_script("arguments[0].click();", not_now[1])
 for key in keywords:
