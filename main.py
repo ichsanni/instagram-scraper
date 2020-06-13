@@ -17,6 +17,7 @@ with open('keyword.csv', newline='') as key:
 
 
 def search(kword):
+    tgt_data = []
     target_addr = []
     search_bar = driver.find_element_by_css_selector('input[type="text"]')
     search_bar.send_keys(kword)
@@ -46,9 +47,7 @@ def search(kword):
                     raw_data.append(acc_name.text)
                     raw_data.append(prog.group())
                     print(raw_data)
-                    with open('instagram_data.csv', 'a+', newline='') as append_data:
-                        append_this = csv.writer(append_data)
-                        append_this.writerow(raw_data)
+                    tgt_data.append(raw_data)
                     time.sleep(3)
                     global account_scraped
                     account_scraped += 1
@@ -83,6 +82,9 @@ not_now = driver.find_elements_by_css_selector('div[role="dialog"] div div div b
 driver.execute_script("arguments[0].click();", not_now[1])
 for key in keywords:
     search(key)
+    with open('instagram_data.csv', 'a+', newline='') as append_data:
+        append_this = csv.writer(append_data)
+        append_this.writerows(raw_data)
 # last things last
 print("Finished.")
 time.sleep(5)
