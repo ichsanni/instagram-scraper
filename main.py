@@ -48,14 +48,14 @@ def search(kword):
                     raw_data.append(acc_name.text)
                     raw_data.append(prog.group())
                     raw_data.append(rm_nl)
-                    global account_scraped
-                    account_scraped += 1
-                    print(account_scraped)
                     print(raw_data)
                     time.sleep(3)
                     with open('instagram_data.csv', 'a+', newline='') as append_data:
                         append_this = csv.writer(append_data)
                         append_this.writerow(raw_data)
+                    global account_scraped
+                    account_scraped += 1
+                    print(account_scraped)
             except IndexError:
                 pass
             except ValueError:
@@ -64,7 +64,9 @@ def search(kword):
             pass
 
 
-driver = webdriver.Firefox()
+firefox_options = webdriver.FirefoxOptions()
+firefox_options.add_argument("-headless")
+driver = webdriver.Firefox(firefox_options=firefox_options)
 driver.get("https://www.instagram.com/accounts/login/")
 login = ec.presence_of_element_located((By.NAME, 'username'))
 wdw(driver, 15).until(login)
