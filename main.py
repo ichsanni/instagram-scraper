@@ -1,0 +1,80 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support import expected_conditions as ec
+from selenium.webdriver.support.ui import WebDriverWait as wdw
+from selenium.webdriver.common.by import By
+import time, csv, re
+
+
+keywords = []
+with open('keyword.csv', newline='') as key:
+    print("Reading keyword.csv")
+    key_data = csv.reader(key)
+    for row in key_data:
+        keywords.append(row)
+def search(kword):
+    tgt_data = []
+    search_bar = driver.find_element_by_css_selector('input[type="text"]')
+    search_bar.send_keys(kword)
+    print("Starts searching " + str(kword))
+    acc_pr = ec.presence_of_element_located((By.CSS_SELECTOR, 'a.yCE8d'))
+    wdw(driver, 15).until(acc_pr)
+    time.sleep(3)
+    target_addr = []
+    account_lists = driver.find_elements_by_css_selector('a.yCE8d')
+    for a in account_lists:
+        target_addr.append(a.get_attribute('href'))
+    for addr in target_addr:
+        escape_hashtag = re.search('/explore/', addr)
+        if escape_hashtag is None:
+            driver.get(addr)
+            bio_pr = ec.presence_of_element_located((By.CSS_SELECTOR, 'div.-vDIg'))
+            wdw(driver, 15).until(bio_pr)
+            try:
+                bio = driver.find_element_by_css_selector('div.-vDIg')
+                rm_d = re.sub(r'\D', '', bio.text)
+                prog = re.search(r'(08|628)\d{8,10}', rm_d)
+                if prog:
+                    follower_count = driver.find_elements_by_css_selector('ul li a span')
+                    acc_name = driver.find_element_by_css_selector('h2')
+                    fol = int(follower_count[0].text)
+                    raw_data = []
+                    raw_data.append(acc_name.text)
+                    raw_data.append(prog.group())
+                    print(raw_data)
+                    tgt_data.append(raw_data)
+                    print(tgt_data)
+                    time.sleep(1)
+                    driver.find_element_by_css_selector('div.nZSzR button').click()
+                    time.sleep(1)
+            except IndexError:
+                pass
+            except ValueError:
+                pass
+        else:
+            pass
+driver = webdriver.Firefox()
+driver.get("https://www.instagram.com/accounts/login/")
+login = ec.presence_of_element_located((By.NAME, 'username'))
+wdw(driver, 15).until(login)
+uname_field = driver.find_element_by_name('username')
+username = '_sys32_exe'
+for i in username:
+    uname_field.send_keys(i)
+    time.sleep(0.2)
+pword_field = driver.find_element_by_name('password')
+password = 'sivispacem'
+for i in password:
+    pword_field.send_keys(i)
+    time.sleep(0.4)
+pword_field.send_keys(Keys.ENTER)
+print("Successfully logged in.")
+time.sleep(10)
+not_now = driver.find_elements_by_css_selector('div[role="dialog"] div div div button')
+driver.execute_script("arguments[0].click();", not_now[1])
+for key in keywords:
+    search(key)
+# last things last
+print("Finished.")
+time.sleep(5)
+driver.close()
