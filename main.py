@@ -17,7 +17,6 @@ with open('keyword.csv', newline='') as key:
 
 
 def search(kword):
-    tgt_data = []
     target_addr = []
     search_bar = driver.find_element_by_css_selector('input[type="text"]')
     search_bar.send_keys(kword)
@@ -43,15 +42,20 @@ def search(kword):
                     follower_count = driver.find_elements_by_css_selector('ul li a span')
                     acc_name = driver.find_element_by_css_selector('h2')
                     fol = int(follower_count[0].text)
+                    rm_nl = re.sub(r'\n', '', bio.text)
                     raw_data = []
+                    raw_data.append(addr)
                     raw_data.append(acc_name.text)
                     raw_data.append(prog.group())
-                    print(raw_data)
-                    tgt_data.append(raw_data)
-                    time.sleep(3)
+                    raw_data.append(rm_nl)
                     global account_scraped
                     account_scraped += 1
                     print(account_scraped)
+                    print(raw_data)
+                    time.sleep(3)
+                    with open('instagram_data.csv', 'a+', newline='') as append_data:
+                        append_this = csv.writer(append_data)
+                        append_this.writerow(raw_data)
             except IndexError:
                 pass
             except ValueError:
@@ -82,9 +86,6 @@ not_now = driver.find_elements_by_css_selector('div[role="dialog"] div div div b
 driver.execute_script("arguments[0].click();", not_now[1])
 for key in keywords:
     search(key)
-    with open('instagram_data.csv', 'a+', newline='') as append_data:
-        append_this = csv.writer(append_data)
-        append_this.writerows(raw_data)
 # last things last
 print("Finished.")
 time.sleep(5)
