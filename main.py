@@ -28,12 +28,14 @@ def get_account(link):
         prog = re.search(r'(08|628)\d{8,10}', rm_d)
         if prog:
             follower_count = driver.find_element_by_css_selector('ul li a span')
+            fol = int(follower_count.text)
             acc_name = driver.find_element_by_css_selector('h2')
             rm_nl = re.sub(r'\n', '', bio.text)
+            uni_ascii = rm_nl.encode('ascii', 'ignore')
             raw_data = []
             raw_data.append(link)
             raw_data.append(acc_name.text)
-            raw_data.append(follower_count.text)
+            raw_data.append(fol)
             raw_data.append(prog.group())
             raw_data.append(rm_nl)
             print(raw_data)
