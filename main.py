@@ -3,6 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.ui import WebDriverWait as wdw
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import TimeoutException
 import time, csv, re
 
 
@@ -16,6 +17,40 @@ with open('keyword.csv', newline='') as key:
         keywords.append(row)
 
 
+def get_account(link):
+    driver.get(link)
+    bio_pr = ec.presence_of_element_located((By.CSS_SELECTOR, 'div.-vDIg'))
+    wdw(driver, 15).until(bio_pr)
+    time.sleep(20)
+    try:
+        bio = driver.find_element_by_css_selector('div.-vDIg')
+        rm_d = re.sub(r'\D', '', bio.text)
+        prog = re.search(r'(08|628)\d{8,10}', rm_d)
+        if prog:
+            follower_count = driver.find_elements_by_css_selector('ul li a span')
+            acc_name = driver.find_element_by_css_selector('h2')
+            fol = int(follower_count[0].text)
+            rm_nl = re.sub(r'\n', '', bio.text)
+            raw_data = []
+            raw_data.append(link)
+            raw_data.append(acc_name.text)
+            raw_data.append(prog.group())
+            raw_data.append(rm_nl)
+            print(raw_data)
+            time.sleep(20)
+            with open('instagram_data.csv', 'a+', newline='') as append_data:
+                append_this = csv.writer(append_data)
+                append_this.writerow(raw_data)
+            global account_scraped
+            account_scraped += 1
+            print(account_scraped)
+    except IndexError:
+        pass
+    except ValueError:
+        pass
+    except TimeoutException:
+        time.sleep(30)
+        get_account(link)
 def search(kword):
     target_addr = []
     search_bar = driver.find_element_by_css_selector('input[type="text"]')
@@ -30,43 +65,10 @@ def search(kword):
     for addr in target_addr:
         escape_hashtag = re.search('/explore/', addr)
         if escape_hashtag is None:
-            driver.get(addr)
-            bio_pr = ec.presence_of_element_located((By.CSS_SELECTOR, 'div.-vDIg'))
-            wdw(driver, 15).until(bio_pr)
-            time.sleep(3)
-            try:
-                bio = driver.find_element_by_css_selector('div.-vDIg')
-                rm_d = re.sub(r'\D', '', bio.text)
-                prog = re.search(r'(08|628)\d{8,10}', rm_d)
-                if prog:
-                    follower_count = driver.find_elements_by_css_selector('ul li a span')
-                    acc_name = driver.find_element_by_css_selector('h2')
-                    fol = int(follower_count[0].text)
-                    rm_nl = re.sub(r'\n', '', bio.text)
-                    raw_data = []
-                    raw_data.append(addr)
-                    raw_data.append(acc_name.text)
-                    raw_data.append(prog.group())
-                    raw_data.append(rm_nl)
-                    print(raw_data)
-                    time.sleep(3)
-                    with open('instagram_data.csv', 'a+', newline='') as append_data:
-                        append_this = csv.writer(append_data)
-                        append_this.writerow(raw_data)
-                    global account_scraped
-                    account_scraped += 1
-                    print(account_scraped)
-            except IndexError:
-                pass
-            except ValueError:
-                pass
-        else:
-            pass
+            get_account(addr)
 
 
-firefox_options = webdriver.FirefoxOptions()
-firefox_options.add_argument("-headless")
-driver = webdriver.Firefox(firefox_options=firefox_options)
+driver = webdriver.Firefox()
 driver.get("https://www.instagram.com/accounts/login/")
 login = ec.presence_of_element_located((By.NAME, 'username'))
 wdw(driver, 15).until(login)
