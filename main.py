@@ -27,13 +27,13 @@ def get_account(link):
         rm_d = re.sub(r'\D', '', bio.text)
         prog = re.search(r'(08|628)\d{8,10}', rm_d)
         if prog:
-            follower_count = driver.find_elements_by_css_selector('ul li a span')
+            follower_count = driver.find_element_by_css_selector('ul li a span')
             acc_name = driver.find_element_by_css_selector('h2')
-            fol = int(follower_count[0].text)
             rm_nl = re.sub(r'\n', '', bio.text)
             raw_data = []
             raw_data.append(link)
             raw_data.append(acc_name.text)
+            raw_data.append(follower_count.text)
             raw_data.append(prog.group())
             raw_data.append(rm_nl)
             print(raw_data)
@@ -45,10 +45,13 @@ def get_account(link):
             account_scraped += 1
             print(account_scraped)
     except IndexError:
+        print("no bio found")
         pass
     except ValueError:
+        print("follower exceeds 999")
         pass
     except TimeoutException:
+        print("blocked")
         time.sleep(30)
         get_account(link)
 def search(kword):
