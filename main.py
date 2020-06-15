@@ -18,6 +18,46 @@ with open('keyword.csv', newline='') as key:
 global current_acc
 current_acc = ""
 
+
+def open_driver(first_login=False):
+    driver = webdriver.Firefox()
+    driver.get("https://www.instagram.com/accounts/login/")
+    login = ec.presence_of_element_located((By.NAME, 'username'))
+    wdw(driver, 15).until(login)
+    uname_field = driver.find_element_by_name('username')
+    username = '_sys32_exe'
+    for i in username:
+        uname_field.send_keys(i)
+        time.sleep(0.2)
+    pword_field = driver.find_element_by_name('password')
+    password = 'sivispacem'
+    for i in password:
+        pword_field.send_keys(i)
+        time.sleep(0.4)
+    pword_field.send_keys(Keys.ENTER)
+    print("Successfully logged in.")
+    time.sleep(15)
+    if first_login:
+        driver.get("https://www.instagram.com/")
+        not_now = driver.find_elements_by_css_selector('div[role="dialog"] div div div button')
+        driver.execute_script("arguments[0].click();", not_now[1])
+        for key in keywords:
+            search(key)
+def search(kword):
+    target_addr = []
+    search_bar = driver.find_element_by_css_selector('input[type="text"]')
+    search_bar.send_keys(kword)
+    print("Starts searching " + str(kword))
+    acc_pr = ec.presence_of_element_located((By.CSS_SELECTOR, 'a.yCE8d'))
+    wdw(driver, 15).until(acc_pr)
+    time.sleep(5)
+    account_lists = driver.find_elements_by_css_selector('a.yCE8d')
+    for a in account_lists:
+        target_addr.append(a.get_attribute('href'))
+    for addr in target_addr:
+        escape_hashtag = re.search('/explore/', addr)
+        if escape_hashtag is None:
+            get_account(addr)
 def get_account(link):
     try:
         driver.get(link)
@@ -65,46 +105,8 @@ def get_account(link):
     except NoSuchElementException:
         print("user name not found")
         pass
-def search(kword):
-    target_addr = []
-    search_bar = driver.find_element_by_css_selector('input[type="text"]')
-    search_bar.send_keys(kword)
-    print("Starts searching " + str(kword))
-    acc_pr = ec.presence_of_element_located((By.CSS_SELECTOR, 'a.yCE8d'))
-    wdw(driver, 15).until(acc_pr)
-    time.sleep(5)
-    account_lists = driver.find_elements_by_css_selector('a.yCE8d')
-    for a in account_lists:
-        target_addr.append(a.get_attribute('href'))
-    for addr in target_addr:
-        escape_hashtag = re.search('/explore/', addr)
-        if escape_hashtag is None:
-            get_account(addr)
-def open_driver(first_login=False):
-    driver = webdriver.Firefox()
-    driver.get("https://www.instagram.com/accounts/login/")
-    login = ec.presence_of_element_located((By.NAME, 'username'))
-    wdw(driver, 15).until(login)
-    uname_field = driver.find_element_by_name('username')
-    username = '_sys32_exe'
-    for i in username:
-        uname_field.send_keys(i)
-        time.sleep(0.2)
-    pword_field = driver.find_element_by_name('password')
-    password = 'sivispacem'
-    for i in password:
-        pword_field.send_keys(i)
-        time.sleep(0.4)
-    pword_field.send_keys(Keys.ENTER)
-    print("Successfully logged in.")
-    time.sleep(15)
-    if first_login:
-        driver.get("https://www.instagram.com/")
-        not_now = driver.find_elements_by_css_selector('div[role="dialog"] div div div button')
-        driver.execute_script("arguments[0].click();", not_now[1])
-        for key in keywords:
-            search(key)
-
+    
+    
 open_driver(True)
 # last things last
 print("Finished.")
