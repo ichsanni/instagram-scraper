@@ -102,8 +102,8 @@ def get_account(link):
         pass
     except TimeoutException:
         print("blocked, sleep for 5 minutes")
-        time.sleep(300)
         driver.close()
+        time.sleep(300)
         print("reopening driver")
         open_driver()
         get_account(current_acc)
