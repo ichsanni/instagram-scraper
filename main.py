@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.ui import WebDriverWait as wdw
 from selenium.webdriver.common.by import By
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
 import time, csv, re
 
 
@@ -15,14 +15,17 @@ with open('keyword.csv', newline='') as key:
     key_data = csv.reader(key)
     for row in key_data:
         keywords.append(row)
-
+global current_acc
+current_acc = ""
 
 def get_account(link):
-    driver.get(link)
-    bio_pr = ec.presence_of_element_located((By.CSS_SELECTOR, 'div.-vDIg'))
-    wdw(driver, 15).until(bio_pr)
-    time.sleep(20)
     try:
+        driver.get(link)
+        global current_acc
+        current_acc = link
+        bio_pr = ec.presence_of_element_located((By.CSS_SELECTOR, 'div.-vDIg'))
+        wdw(driver, 15).until(bio_pr)
+        time.sleep(20)
         bio = driver.find_element_by_css_selector('div.-vDIg')
         rm_d = re.sub(r'\D', '', bio.text)
         prog = re.search(r'(08|628)\d{8,10}', rm_d)
@@ -37,7 +40,7 @@ def get_account(link):
             raw_data.append(acc_name.text)
             raw_data.append(fol)
             raw_data.append(prog.group())
-            raw_data.append(rm_nl)
+            raw_data.append(uni_ascii)
             print(raw_data)
             time.sleep(20)
             with open('instagram_data.csv', 'a+', newline='') as append_data:
@@ -53,9 +56,15 @@ def get_account(link):
         print("follower exceeds 999")
         pass
     except TimeoutException:
-        print("blocked")
-        time.sleep(30)
-        get_account(link)
+        print("blocked, sleep for 5 minutes")
+        time.sleep(300)
+        driver.close()
+        print("reopening driver")
+        open_driver()
+        get_account(current_acc)
+    except NoSuchElementException:
+        print("user name not found")
+        pass
 def search(kword):
     target_addr = []
     search_bar = driver.find_element_by_css_selector('input[type="text"]')
@@ -71,30 +80,32 @@ def search(kword):
         escape_hashtag = re.search('/explore/', addr)
         if escape_hashtag is None:
             get_account(addr)
+def open_driver(first_login=False):
+    driver = webdriver.Firefox()
+    driver.get("https://www.instagram.com/accounts/login/")
+    login = ec.presence_of_element_located((By.NAME, 'username'))
+    wdw(driver, 15).until(login)
+    uname_field = driver.find_element_by_name('username')
+    username = '_sys32_exe'
+    for i in username:
+        uname_field.send_keys(i)
+        time.sleep(0.2)
+    pword_field = driver.find_element_by_name('password')
+    password = 'sivispacem'
+    for i in password:
+        pword_field.send_keys(i)
+        time.sleep(0.4)
+    pword_field.send_keys(Keys.ENTER)
+    print("Successfully logged in.")
+    time.sleep(15)
+    if first_login:
+        driver.get("https://www.instagram.com/")
+        not_now = driver.find_elements_by_css_selector('div[role="dialog"] div div div button')
+        driver.execute_script("arguments[0].click();", not_now[1])
+        for key in keywords:
+            search(key)
 
-
-driver = webdriver.Firefox()
-driver.get("https://www.instagram.com/accounts/login/")
-login = ec.presence_of_element_located((By.NAME, 'username'))
-wdw(driver, 15).until(login)
-uname_field = driver.find_element_by_name('username')
-username = '_sys32_exe'
-for i in username:
-    uname_field.send_keys(i)
-    time.sleep(0.2)
-pword_field = driver.find_element_by_name('password')
-password = 'sivispacem'
-for i in password:
-    pword_field.send_keys(i)
-    time.sleep(0.4)
-pword_field.send_keys(Keys.ENTER)
-print("Successfully logged in.")
-time.sleep(10)
-driver.get("https://www.instagram.com/")
-not_now = driver.find_elements_by_css_selector('div[role="dialog"] div div div button')
-driver.execute_script("arguments[0].click();", not_now[1])
-for key in keywords:
-    search(key)
+open_driver(True)
 # last things last
 print("Finished.")
 time.sleep(5)
