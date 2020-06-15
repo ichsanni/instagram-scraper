@@ -17,9 +17,12 @@ with open('keyword.csv', newline='') as key:
         keywords.append(row)
 global current_acc
 current_acc = ""
+global driver
+driver = ""
 
 
 def open_driver(first_login=False):
+    global driver
     driver = webdriver.Firefox()
     driver.get("https://www.instagram.com/accounts/login/")
     login = ec.presence_of_element_located((By.NAME, 'username'))
@@ -45,6 +48,7 @@ def open_driver(first_login=False):
             search(key)
 def search(kword):
     target_addr = []
+    global driver
     search_bar = driver.find_element_by_css_selector('input[type="text"]')
     search_bar.send_keys(kword)
     print("Starts searching " + str(kword))
@@ -59,6 +63,7 @@ def search(kword):
         if escape_hashtag is None:
             get_account(addr)
 def get_account(link):
+    global driver
     try:
         driver.get(link)
         global current_acc
