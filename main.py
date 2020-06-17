@@ -42,23 +42,18 @@ def open_driver(first_login=False):
         time.sleep(0.4)
     pword_field.send_keys(Keys.ENTER)
     print("Successfully logged in.")
-    time.sleep(15)
+    time.sleep(30)
     if first_login:
         driver.get("https://www.instagram.com/")
         not_now = driver.find_elements_by_css_selector('div[role="dialog"] div div div button')
         driver.execute_script("arguments[0].click();", not_now[1])
         global iteration_count
         for query in keywords:
-            if iteration_count < 2:
-                search(query)
-                iteration_count += 1
-            else:
-                driver.close()
-                iteration_count = 0
-                print("good night, " + time.asctime())
-                time.sleep(14400)
-                open_driver()
-                search(query)
+            search(query)
+            driver.close()
+            print(time.asctime())
+            time.sleep(3600)
+            open_driver()
 
 
 def search(kword):
@@ -87,7 +82,7 @@ def get_account(link):
         current_acc = link
         bio_pr = ec.presence_of_element_located((By.CSS_SELECTOR, 'div.-vDIg'))
         wdw(driver, 15).until(bio_pr)
-        time.sleep(20)
+        time.sleep(30)
         bio = driver.find_element_by_css_selector('div.-vDIg')
         rm_d = re.sub(r'\D', '', bio.text)
         prog = re.search(r'(08|628)\d{8,10}', rm_d)
@@ -104,7 +99,7 @@ def get_account(link):
             raw_data.append(prog.group())
             raw_data.append(uni_ascii)
             print(raw_data)
-            time.sleep(20)
+            time.sleep(30)
             with open('instagram_data.csv', 'a+', newline='') as append_data:
                 append_this = csv.writer(append_data)
                 append_this.writerow(raw_data)
@@ -120,7 +115,7 @@ def get_account(link):
     except TimeoutException:
         print("blocked, sleep for 5 minutes")
         driver.close()
-        time.sleep(300)
+        time.sleep(600)
         print("reopening driver")
         open_driver()
         get_account(current_acc)
