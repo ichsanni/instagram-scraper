@@ -4,8 +4,9 @@ from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.ui import WebDriverWait as wdw
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
-import time, csv, re
-
+import time
+import csv
+import re
 
 keywords = []
 global account_scraped
@@ -19,6 +20,8 @@ global current_acc
 current_acc = ""
 global driver
 driver = ""
+global iteration_count
+iteration_count = 0
 
 
 def open_driver(first_login=False):
@@ -44,8 +47,20 @@ def open_driver(first_login=False):
         driver.get("https://www.instagram.com/")
         not_now = driver.find_elements_by_css_selector('div[role="dialog"] div div div button')
         driver.execute_script("arguments[0].click();", not_now[1])
-        for key in keywords:
-            search(key)
+        global iteration_count
+        for query in keywords:
+            if iteration_count < 2:
+                search(query)
+                iteration_count += 1
+            else:
+                driver.close()
+                iteration_count = 0
+                print("good night, " + time.asctime())
+                time.sleep(14400)
+                open_driver()
+                search(query)
+
+
 def search(kword):
     target_addr = []
     global driver
@@ -62,6 +77,8 @@ def search(kword):
         escape_hashtag = re.search('/explore/', addr)
         if escape_hashtag is None:
             get_account(addr)
+
+
 def get_account(link):
     global driver
     try:
@@ -110,8 +127,8 @@ def get_account(link):
     except NoSuchElementException:
         print("user name not found")
         pass
-    
-    
+
+
 open_driver(True)
 # last things last
 print("Finished.")
