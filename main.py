@@ -8,6 +8,7 @@ import time
 import csv
 import re
 
+# hoxx auth id = zbd-4sabl-zw
 keywords = []
 global account_scraped
 account_scraped = 0
@@ -115,7 +116,7 @@ def get_account(link):
     except TimeoutException:
         print("blocked, sleep for 1 hour")
         driver.close()
-        time.sleep(3600)
+        time.sleep(7200)
         print("reopening driver")
         open_driver()
         get_account(current_acc)
