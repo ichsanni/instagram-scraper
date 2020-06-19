@@ -34,6 +34,7 @@ def open_driver():
             driver.get("https://www.google.com/search?q=" + search_query)
             time.sleep(2)
             find_results()
+        login()
         for acc in ig_url:
             get_account(acc)
             time.sleep(30)
@@ -93,10 +94,31 @@ def get_account(link):
         driver.close()
         time.sleep(600)
         print("reopening driver")
-        open_driver()
+        global driver
+        driver = webdriver.Firefox()
+        login()
         get_account(current_acc)
     except NoSuchElementException:
         print("user name not found")
         pass
 
+def login():
+    global driver
+    driver.get("https://www.instagram.com/accounts/login/")
+    login = ec.presence_of_element_located((By.NAME, 'username'))
+    wdw(driver, 15).until(login)
+    uname_field = driver.find_element_by_name('username')
+    username = '_sys32_exe'
+    for i in username:
+        uname_field.send_keys(i)
+        time.sleep(0.2)
+    pword_field = driver.find_element_by_name('password')
+    password = 'sivispacem'
+    for i in password:
+        pword_field.send_keys(i)
+        time.sleep(0.4)
+    pword_field.send_keys(Keys.ENTER)
+    print("Successfully logged in.")
+    time.sleep(30)
+    
 open_driver()
