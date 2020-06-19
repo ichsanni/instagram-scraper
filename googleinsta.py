@@ -11,7 +11,7 @@ import re
 # ignore: https://www.instagram.com/p https://www.instagram.com/explore
 # addr: https://www.google.com/search?q=query+here
 # nav: tr td a['href']
-page_nav = [0, 10]
+page_nav = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]
 keywords = []
 with open('og_keyword.csv', newline='') as key:
     print("Reading keyword.csv")
@@ -35,6 +35,8 @@ def open_driver():
             time.sleep(2)
             find_results()
         login()
+        print("logged in")
+        time.sleep(30)
         for acc in ig_url:
             get_account(acc)
             time.sleep(30)
