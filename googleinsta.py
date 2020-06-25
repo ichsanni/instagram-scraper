@@ -106,15 +106,16 @@ def get_account(link):
             print("follower exceeds 999")
             pass
         except TimeoutException:
-            print("blocked, sleep for 2 hours")
-            driver.close()
-            print(time.asctime())
-            time.sleep(7200)
-            print("reopening driver")
-            global driver
-            driver = webdriver.Firefox()
-            login()
-            get_account(current_acc)
+            #print("blocked, sleep for 2 hours")
+            #driver.close()
+            #print(time.asctime())
+            #time.sleep(7200)
+            #print("reopening driver")
+            #global driver
+            #driver = webdriver.Firefox()
+            #login()
+            #get_account(current_acc)
+            pass
         except NoSuchElementException:
             print("username not found")
             pass
