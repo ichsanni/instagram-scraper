@@ -10,7 +10,7 @@ import csv
 
 locations = ["selatan", "barat", "timur", "utara", "pusat"]
 keywords = []
-with open('og_keyword.csv', newline='') as key:
+with open('gmaps_keyword.csv', newline='') as key:
     print("Reading keyword.csv")
     key_data = csv.reader(key)
     for row in key_data:
@@ -32,7 +32,7 @@ def card_scraping(link="", recursion=False):
     try:
         WebDriverWait(driver, 30).until(next_button_present)
         global count
-        if count < 1:
+        if count < 3:
             count += 1
             get_card_details()
             #next_button = driver.find_element_by_css_selector("button[id$='_section-pagination-button-next']")
@@ -94,9 +94,9 @@ def get_card_details():
 
 for loc in locations:
     for key in keywords:
-        concat = ''.join(key) + " rumahan jakarta " + str(loc)
+        concat = ''.join(key) + " jakarta " + str(loc)
         final_query = re.sub("\s", "+", concat)
-        print(f"query: {final_query}")
+        print("query: " + final_query)
         address = "https://www.google.co.id/maps/search/" + final_query
         card_scraping(address, True)
 

@@ -14,7 +14,7 @@ import re
 # nav: tr td a['href']
 page_nav = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]
 keywords = []
-with open('og_keyword.csv', newline='') as key:
+with open('ginsta_keyword.csv', newline='') as key:
     print("Reading keyword.csv")
     key_data = csv.reader(key)
     for row in key_data:
@@ -29,9 +29,10 @@ global acc_count
 acc_count = 0
 
 def open_driver():
-    global driver
-    driver = webdriver.Firefox()
     for ind_key in keywords:
+        print(''.join(ind_key))
+        global driver
+        driver = webdriver.Firefox()
         for pg in page_nav:
             search_query = "site:https://www.instagram.com/ " + ''.join(ind_key) + " jakarta&start=" + str(pg)
             driver.get("https://www.google.com/search?q=" + search_query)
@@ -39,14 +40,17 @@ def open_driver():
             find_results()
         print(ig_url)
         login()
-        print("logged in")
-        time.sleep(30)
+        time.sleep(15)
         global ig_url
+        prev_ig = ""
         for acc in ig_url:
-            get_account(acc)
-            time.sleep(30)
+            if acc == prev_ig:
+                pass
+            else:
+                get_account(acc)
         time.sleep(3600)
         ig_url = []
+    driver.close()
 
 def find_results():
     global driver
@@ -137,7 +141,6 @@ def login():
         time.sleep(0.4)
     pword_field.send_keys(Keys.ENTER)
     print("Successfully logged in.")
-    time.sleep(30)
     
 open_driver()
 #driver = webdriver.Firefox()
