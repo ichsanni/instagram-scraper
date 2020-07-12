@@ -7,8 +7,8 @@ import time
 import re
 import csv
 
-
-locations = ["barat", "timur", "utara", "pusat", "selatan"]
+# selatan rendang
+locations = ["timur", "utara", "pusat", "selatan", "barat"]
 keywords = []
 with open('gmaps_keyword.csv', newline='') as key:
     print("Reading keyword.csv")
@@ -19,6 +19,8 @@ global driver
 driver = ""
 global count
 count = 0
+global dcount
+dcount = 1
 
 def card_scraping(link="", recursion=False):
     global driver
@@ -36,9 +38,14 @@ def card_scraping(link="", recursion=False):
             count += 1
             get_card_details()
             #next_button = driver.find_element_by_css_selector("button[id$='_section-pagination-button-next']")
-            next_button = driver.find_element_by_css_selector("button[jsaction='pane.paginationSection.nextPage']")
+            try:
+                next_button = driver.find_element_by_css_selector("button[id$='_section-pagination-button-next']")
+            except NoSuchElementException:
+                time.sleep(60)
+                next_button = driver.find_element_by_css_selector("button[jsaction='pane.paginationSection.nextPage']")
             driver.execute_script("arguments[0].click();", next_button)
             print("next button pressed")
+            print(time.asctime())
             card_scraping()
         else:
             count = 0
@@ -49,13 +56,15 @@ def card_scraping(link="", recursion=False):
 
 def get_card_details():
     try:
+        global dcount
         global driver
         for item in range(20):
             raw_data = []
             titles = driver.find_elements_by_css_selector("h3.section-result-title span")
             driver.execute_script("arguments[0].click();", titles[item])
             txt_title = titles[item].text
-            print(str(item) + ". " + txt_title)
+            print(str(dcount) + ". " + txt_title)
+            dcount += 1
             details_present = ec.presence_of_element_located((By.CSS_SELECTOR, 'div.gm2-body-2'))
             WebDriverWait(driver, 120).until(details_present)
             needed_data = [1, 3, 5, 6, 7]
@@ -94,7 +103,7 @@ def get_card_details():
 
 for loc in locations:
     for key in keywords:
-        concat = ''.join(key) + " jakarta " + str(loc)
+        concat = ''.join(key) + " rumahan jakarta " + str(loc)
         final_query = re.sub("\s", "+", concat)
         print("query: " + final_query)
         address = "https://www.google.co.id/maps/search/" + final_query

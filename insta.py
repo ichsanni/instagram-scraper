@@ -12,7 +12,7 @@ import re
 keywords = []
 global account_scraped
 account_scraped = 0
-with open('keyword.csv', newline='') as key:
+with open('new_instakeyword.csv', newline='') as key:
     print("Reading keyword.csv")
     key_data = csv.reader(key)
     for row in key_data:
@@ -50,7 +50,8 @@ def open_driver(first_login=False):
         driver.execute_script("arguments[0].click();", not_now[1])
         global iteration_count
         for query in keywords:
-            search(query)
+            q = ''.join(query) + "jakarta"
+            search(q)
             driver.close()
             print(time.asctime())
             time.sleep(3600)
