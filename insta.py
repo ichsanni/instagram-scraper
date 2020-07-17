@@ -32,7 +32,7 @@ def open_driver(first_login=False):
     login = ec.presence_of_element_located((By.NAME, 'username'))
     wdw(driver, 15).until(login)
     uname_field = driver.find_element_by_name('username')
-    username = '_sys32_exe'
+    username = 'testaccno5'
     for i in username:
         uname_field.send_keys(i)
         time.sleep(0.2)
@@ -50,11 +50,11 @@ def open_driver(first_login=False):
         driver.execute_script("arguments[0].click();", not_now[1])
         global iteration_count
         for query in keywords:
-            q = ''.join(query) + "jakarta"
+            q = ''.join(query) + " jakarta"
             search(q)
             driver.close()
             print(time.asctime())
-            time.sleep(3600)
+            time.sleep(1800)
             open_driver()
 
 
@@ -102,7 +102,7 @@ def get_account(link):
             raw_data.append(uni_ascii)
             print(raw_data)
             time.sleep(30)
-            with open('instagram_data.csv', 'a+', newline='') as append_data:
+            with open('instagram_data5.csv', 'a+', newline='') as append_data:
                 append_this = csv.writer(append_data)
                 append_this.writerow(raw_data)
             global account_scraped
@@ -115,7 +115,7 @@ def get_account(link):
         print("follower exceeds 999")
         pass
     except TimeoutException:
-        print("blocked, sleep for 1 hour")
+        print("blocked, sleep for 2 hours")
         driver.close()
         print(time.asctime())
         time.sleep(7200)
