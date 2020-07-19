@@ -8,7 +8,7 @@ import re
 import csv
 
 # selatan rendang
-locations = ["timur", "utara", "pusat", "selatan", "barat"]
+locations = ["utara", "pusat", "selatan", "barat", "timur"]
 keywords = []
 with open('gmaps_keyword.csv', newline='') as key:
     print("Reading keyword.csv")
@@ -83,7 +83,7 @@ def get_card_details():
                 txt_detail = found_details[i].text
                 print(txt_detail)
                 raw_data.append(txt_detail)
-            with open('gmaps_data.csv', 'a+', newline='') as append_data:
+            with open('gmaps_data2.csv', 'a+', newline='') as append_data:
                 append_this = csv.writer(append_data)
                 append_this.writerow(raw_data)
             button_present = ec.presence_of_element_located((By.CSS_SELECTOR, 'button.section-back-to-list-button'))
