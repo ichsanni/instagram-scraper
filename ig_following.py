@@ -8,29 +8,37 @@ import time
 import csv
 import re
 
-finished_acc = []
-crawling_list = []
-new_acc = []
-following_list = []
-# global account_scraped
-account_scraped = 0
-# global current_acc
-current_acc = ""
-# global driver
-driver = ""
-# global iteration_count
-iteration_count = 0
-with open('following_acc.csv', newline='') as key:
-    print("Reading following_acc.csv")
-    key_data = csv.reader(key)
-    for row in key_data:
-        detect = re.search(r'N', row[1])
-        if detect is not None:
-            crawling_list.append(row)
-        else:
-            finished_acc.append(row)
 
-def open_driver(first_login=False):
+global finished_acc
+finished_acc = []
+global crawling_list
+crawling_list = []
+global new_acc
+new_acc = []
+global following_list
+following_list = []
+global account_scraped
+account_scraped = 0
+global current_acc
+current_acc = ""
+global driver
+driver = ""
+global iteration_count
+iteration_count = 0
+
+
+def open_driver(first_login=False): 
+    with open('following_acc.csv', 'r',  newline='') as key:
+        print("Reading following_acc.csv")
+        key_data = csv.reader(key)
+        for row in key_data:
+            detect = re.search(r'N', row[1])
+            if detect is not None:
+                global crawling_list
+                crawling_list.append(row)
+            else:
+                global finished_acc
+                finished_acc.append(row)
     global driver
     driver = webdriver.Firefox()
     driver.get("https://www.instagram.com/accounts/login/")
@@ -54,6 +62,8 @@ def open_driver(first_login=False):
 
 def see_following():
     global current_acc
+    global finished_acc
+    global crawling_list
     global driver
     for acc in crawling_list:
         finished_acc.append([acc[0], 'C'])
@@ -61,27 +71,34 @@ def see_following():
         link = "https://www.instagram.com/" + str_acc
         driver.get(link)
         time.sleep(5)
-        following_button = driver.find_element_by_css_selector(f"a.-nal3[href='/{str_acc}/following/'] span")
+        following_button = driver.find_element_by_css_selector("a.-nal3[href='/"+ str_acc + "/following/'] span")
         following_amount = following_button.text
         driver.execute_script("arguments[0].click();", following_button)
         time.sleep(5)
         display = 0
-        print(f"following amount: {following_amount}")
-        while display < int(following_amount):
-            if display < 60:
-                first = driver.find_elements_by_css_selector("a.FPmhX")
-                first[0].send_keys(Keys.PAGE_DOWN * 5)
-                time.sleep(5)
-                display = len(first)
-                print(f"display: {display}")
-            else:
-                break
+        print("following amount: " + following_amount)
+        try:
+            while display < int(following_amount):
+                if display < 100:
+                    first = driver.find_elements_by_css_selector("a.FPmhX")
+                    first[0].send_keys(Keys.PAGE_DOWN * 5)
+                    time.sleep(5)
+                    display = len(first)
+                    print("display: " + str(display))
+                else:
+                    break
+        except ValueError as val:
+            print(val)
+            print("passing")
+            pass
         get_following = driver.find_elements_by_css_selector("a.FPmhX")
+        global following_list
         for z in get_following:
             following_list.append(z.get_attribute('href'))
         for a in following_list:
             current_acc = a
             get_account(current_acc)
+        following_list = []
         time.sleep(5)
 
 def get_account(link):
@@ -92,7 +109,7 @@ def get_account(link):
         current_acc = link
         bio_pr = ec.presence_of_element_located((By.CSS_SELECTOR, 'div.-vDIg'))
         wdw(driver, 15).until(bio_pr)
-        time.sleep(30)
+        time.sleep(45)
         bio = driver.find_element_by_css_selector('div.-vDIg')
         rm_d = re.sub(r'\D', '', bio.text)
         prog = re.search(r'(08|628)\d{8,10}', rm_d)
@@ -109,11 +126,12 @@ def get_account(link):
             raw_data.append(prog.group())
             raw_data.append(uni_ascii)
             print(raw_data)
+            global new_acc
             new_acc.append([acc_name.text, 'N'])
-            with open('instagram_data6.csv', 'a+', newline='') as append_data:
+            with open('instagram_data8.csv', 'a+', newline='') as append_data:
                 append_this = csv.writer(append_data)
                 append_this.writerow(raw_data)
-            time.sleep(30)
+            time.sleep(15)
             global account_scraped
             account_scraped += 1
             print(account_scraped)
@@ -138,10 +156,32 @@ def get_account(link):
 try:
     while True:
         open_driver(True)
-finally:
-    with open('following_acc.csv', 'w', newline='') as n:
+        driver.close()
+        print(time.asctime())
+        with open('following_acc.csv', 'w', newline='') as n:
+            new_list = csv.writer(n)
+            global finished_acc
+            new_list.writerows(finished_acc)
+            finished_acc = []
+            global crawling_list
+            new_list.writerows(crawling_list)
+            crawling_list = []
+            global new_acc
+            new_list.writerows(new_acc)
+            new_acc = []
+        time.sleep(3600)
+except Exception as e:
+    with open('following_acc.csv', 'w', newline='')as n:
         new_list = csv.writer(n)
+        global finished_acc
         new_list.writerows(finished_acc)
+        finished_acc = []
+        global crawling_list
+        new_list.writerows(crawling_list)
+        crawling_list = []
+        global new_acc
         new_list.writerows(new_acc)
+        new_acc = []
+        print(e)
 
-driver.close()
+
