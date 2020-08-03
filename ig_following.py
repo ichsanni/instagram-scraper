@@ -68,10 +68,11 @@ def see_following():
     for acc in crawling_list:
         finished_acc.append([acc[0], 'C'])
         str_acc = ''.join(acc[0])
-        link = "https://www.instagram.com/" + str_acc
+        fixed_str = re.sub(r'\s*', '',  str_acc)
+        link = "https://www.instagram.com/" + fixed_str
         driver.get(link)
         time.sleep(5)
-        following_button = driver.find_element_by_css_selector("a.-nal3[href='/"+ str_acc + "/following/'] span")
+        following_button = driver.find_element_by_css_selector("a.-nal3[href='/"+ fixed_str + "/following/'] span")
         following_amount = following_button.text
         driver.execute_script("arguments[0].click();", following_button)
         time.sleep(5)
@@ -145,7 +146,7 @@ def get_account(link):
         print("blocked, sleep for 2 hours")
         driver.close()
         print(time.asctime())
-        time.sleep(7200)
+        time.sleep(10800)
         print("reopening driver")
         open_driver()
         get_account(current_acc)
