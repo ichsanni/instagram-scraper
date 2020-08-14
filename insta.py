@@ -12,7 +12,7 @@ import re
 keywords = []
 global account_scraped
 account_scraped = 0
-with open('new_instakeyword.csv', newline='') as key:
+with open('keyword.csv', newline='') as key:
     print("Reading keyword.csv")
     key_data = csv.reader(key)
     for row in key_data:
@@ -32,7 +32,7 @@ def open_driver(first_login=False):
     login = ec.presence_of_element_located((By.NAME, 'username'))
     wdw(driver, 15).until(login)
     uname_field = driver.find_element_by_name('username')
-    username = 'testaccno5'
+    username = '_sys32_exe'
     for i in username:
         uname_field.send_keys(i)
         time.sleep(0.2)
@@ -50,7 +50,7 @@ def open_driver(first_login=False):
         driver.execute_script("arguments[0].click();", not_now[1])
         global iteration_count
         for query in keywords:
-            q = ''.join(query) + " jakarta"
+            q = ''.join(query) + " tangsel"
             search(q)
             driver.close()
             print(time.asctime())
@@ -102,7 +102,7 @@ def get_account(link):
             raw_data.append(uni_ascii)
             print(raw_data)
             time.sleep(30)
-            with open('instagram_data5.csv', 'a+', newline='') as append_data:
+            with open('instagram_data_bekasi.csv', 'a+', newline='') as append_data:
                 append_this = csv.writer(append_data)
                 append_this.writerow(raw_data)
             global account_scraped
