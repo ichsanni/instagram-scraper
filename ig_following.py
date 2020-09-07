@@ -68,7 +68,7 @@ def see_following():
     for acc in range(len(crawling_list)):
         username, _status = crawling_list.pop(0)
         str_acc = ''.join(username)
-        fixed_str = re.sub(r'\s*', '',  str_acc)
+        fixed_str = re.sub(r'^"|\s*|"$', '',  str_acc)
         link = "https://www.instagram.com/" + fixed_str
         driver.get(link)
         time.sleep(5)
