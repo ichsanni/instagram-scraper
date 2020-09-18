@@ -50,7 +50,7 @@ def open_driver(first_login=False):
         driver.execute_script("arguments[0].click();", not_now[1])
         global iteration_count
         for query in keywords:
-            q = ''.join(query) + " tangsel"
+            q = ''.join(query) + " depok"
             search(q)
             driver.close()
             print(time.asctime())
@@ -102,7 +102,7 @@ def get_account(link):
             raw_data.append(uni_ascii)
             print(raw_data)
             time.sleep(30)
-            with open('instagram_data_bekasi.csv', 'a+', newline='') as append_data:
+            with open('instagram_data_depok.csv', 'a+', newline='') as append_data:
                 append_this = csv.writer(append_data)
                 append_this.writerow(raw_data)
             global account_scraped

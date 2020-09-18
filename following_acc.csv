@@ -1,628 +1,681 @@
-"asinan.neneng	",C
-"rujakbuahnonik_greenlakecity	",C
-"makanan_rumahan_frozen	",C
-"bu2rjo_ketsu	",C
-"saladtanteku	",C
-"buah_saladsegar	",C
-"serabipandan_69	",C
-"otak_otak_oma	",C
-"kebuli_dapurmumtaz	",C
-"rosanti_foodbox	",C
-"nastar_tho_shien	",C
-"tomyummy.food	",C
-"tahujeletottaisi_lebakbulus	",C
-"sambel.bu.narmi	",C
-"escampurbandung_oyen08	",C
-"lauk_unie	",C
-"lauk_celok	",C
-"tarahu.hanglekiu	",C
-"hauranawa.sushi	",C
-"mandalinda95	",C
-"cemilanjakarta46	",C
-"kincadurianbetawi	",C
-"djuragan_tapeuli	",C
-"tapeulimpokindun	",C
-"dapur.miah	",C
-"mendoan1.jkt	",C
-"mendoan_fals	",C
-"mendoanmawar	",C
-"heycake_id	",C
-"siomaypempekmakgita	",C
-"queensmartabak	",C
-"haskincake	",C
-"seahott25	",C
-"nasikebuli.btw	",C
-"birulauk	",C
-"tahukriukyespenggilingan	",C
-"ayamgorengsutarti	",C
-"osengpedaspincuk_jkt	",C
-"cemilan_bangjay	",C
-"bubonar	",C
-"asinansayurcutebraaay	",C
-"lazu.frozen	",C
-"cemilan_enak06	",C
-"tapeuli_khasbetawi	",C
-"tapeulimpokaan	",C
-"saladbuahmaiia.jaktim	",C
-"dapur.ghaisyanie	",C
-"mendoanlegenda	",C
-"morisoles_	",C
-"risoles_ayong_kelapagading	","	N"
-"tekwanpopo	","	N"
-"yessikatan	","	N"
-"kebuliabdubinsultan	","	N"
-"mamamasakenak	","	N"
-"otak_otak_aling	","	N"
-"otakotakmakassar.nat	","	N"
-"kebuli_menteng_pamulang	","	N"
-"acosuki_and_cookies	","	N"
-"tomyamcu	","	N"
-"tomyam_yummy00	","	N"
-"anekamakanan_trhi	","	N"
-"light_pastries	","	N"
-"risoles_mamatami	","	N"
-"alaruma.id	","	N"
-"pempeksanara	","	N"
-"cemilcimel	","	N"
-"nasikuningsamarinda	","	N"
-"kebulijordan.bintaro	","	N"
-"tahuslawibintaro	","	N"
-"dkriuk_mak_lambe	","	N"
-"kriuk_jamaah	","	N"
-"tahusumedangbunancy	","	N"
-"ayambakarmadubelbel	","	N"
-"ayambonbon.id	","	N"
-"mongaeco	","	N"
-"anekakue.bunda	","	N"
-"kuebasah_ciledug	","	N"
-"fruitmama_id	","	N"
-"frozenfood.mame	","	N"
-"rokussabi.id	","	N"
-"makananfrozen.id	","	N"
-"dimspacc	","	N"
-"makaroni_rese	","	N"
-"tapeulibymaksaroh	","	N"
-"tapeulinyakmu_bintaro	","	N"
-"warna125	","	N"
-"yujakfood	","	N"
-"negeribuah	","	N"
-"cirenggeulisjakarta	","	N"
-"rujakbebegjakarta	","	N"
-"tomyam.suki1gaming	","	N"
-"toko_kuejakarta	","	N"
-"kuejakartatimur	","	N"
-"kuejakarta_	","	N"
-"kuekeringjakarta_termurah	","	N"
-"ollabakes.id	","	N"
-"kuring.jkt	","	N"
-"jakartalapislegit	","	N"
-"anakitchen_id	","	N"
-"cookiesfactory.jakarta	","	N"
-"luckysnack_jakarta	","	N"
-"kue.lebaran.jakarta	","	N"
-"serunipastry	","	N"
-"yenyen_store2020	","	N"
-"chizgocookies	","	N"
-"gisel.cookies	","	N"
-"kuekeringjakarta	","	N"
-"dapurmandana	","	N"
-"kuekering_jakarta_	","	N"
-"jual.kuekering_jakarta	","	N"
-"kuekering.jakarta_	","	N"
-"kuekering.jakartaa	","	N"
-"kuepiebrowniesjakarta	","	N"
-"nastarkuelapismq	","	N"
-"khasnenekmoyang	","	N"
-"saltandflourjakarta	","	N"
-"risoles_bututi	","	N"
-"jualrisolesjakarta	","	N"
-"moukue	","	N"
-"mamam.jakarta	","	N"
-"dapurmayorii	","	N"
-"jakarta.risoles	","	N"
-"heavenlyrisoles.jkt	","	N"
-"dapurpuspitajkt	","	N"
-"perabotanmurah24	","	N"
-"dapurjakartans	","	N"
-"dapurnonikjkt	","	N"
-"dapurmande.jakarta	","	N"
-"dapur_arrumi	","	N"
-"dapurbanjarjakarta	","	N"
-"perabotjakarta	","	N"
-"dapur.appa	","	N"
-"dapurwalet	","	N"
-"dapur_talita	","	N"
-"dapuribuku.jakarta	","	N"
-"dapur_naziie_jakarta	","	N"
-"dapur_terogong	","	N"
-"dapoer_anna.jakarta	","	N"
-"dapurkesumbajakarta	","	N"
-"dapur_ny.sian	","	N"
-"dapurtanteyuli	","	N"
-"se.dapur.id	","	N"
-"dapurtorangjakarta	","	N"
-"dapurjojoy_jkt	","	N"
-"dapur_mama_antie	","	N"
-"familisnackjakarta	","	N"
-"pempek_ama	","	N"
-"pem_pekjakarta	","	N"
-"powbowl	","	N"
-"kedaipempekdian99	","	N"
-"pempekyence	","	N"
-"cawanputih	","	N"
-"pempeklicious	","	N"
-"pempeknanajakarta	","	N"
-"simply.kitchenjkt	","	N"
-"pempek_lemaknianjkt	","	N"
-"kitchen.jakarta	","	N"
-"kirimdingin.trijaya	","	N"
-"pempekkejujakarta	","	N"
-"pempeksangprabu_jakarta	","	N"
-"pempekcikning8ulu.id	","	N"
-"bolujaduljakarta	","	N"
-"ayanacakes.id	","	N"
-"bolu_jadoel_jakarta	","	N"
-"bolususulembangjakarta	","	N"
-"bolubolujakarta	","	N"
-"bolulembang.jakartautara	","	N"
-"siliwangibolukukusjakartabarat	","	N"
-"madcakes.id	","	N"
-"kuemurahjakarta	","	N"
-"bolu_jakarta	","	N"
-"baksojakartaenakajabogor	","	N"
-"baksojakarta2017	","	N"
-"nasitumpengjakarta.id	","	N"
-"nasitumpengjakartaselatan	","	N"
-"nasitumpengjakartaa	","	N"
-"nasitumpengjakartaselatan2	","	N"
-"nasiulam	","	N"
-"nasikebulijakarta	","	N"
-"nasiboxmama.jakarta	","	N"
-"jakartanasitumpeng	","	N"
-"poporecipe	","	N"
-"mora_kitchen_new	","	N"
-"dapurqu_jakarta	","	N"
-"nasijinggoputra	","	N"
-"nasinaboks	","	N"
-"vigeecateringg	","	N"
-"desolo.lunchbox	","	N"
-"nasitimjakarta	","	N"
-"nasi.box.mama.jakarta	","	N"
-"gandhok_uti	","	N"
-"negara.rasa	","	N"
-"nasigulejakarta	","	N"
-"senabox.jakarta	","	N"
-"sholly_kitchen	","	N"
-"nasikuningbento.jakarta	","	N"
-"nasikotakjakartatimur	","	N"
-"liwetandjakarta	","	N"
-"nasikuningjakarta20	","	N"
-"nasikuningjakartafranchise	","	N"
-"nasikuning.jaktim	","	N"
-"nasikuningjakarta_	","	N"
-"naskun_jakarta	","	N"
-"nasikuningpontianak	","	N"
-"martabak_jakarta_curup	","	N"
-"martabakjakartasitubondo	","	N"
-"martabak_bangkaja	","	N"
-"martabak_mini_jakarta	","	N"
-"martabakindia_jakarta_bung_ali	","	N"
-"martabakjablayjakarta	","	N"
-"martabak_jakarta	","	N"
-"martabak_jak	","	N"
-"martabakholanejayajakarta	","	N"
-"ayamulegmbahman	","	N"
-"ayamgepreksambellumer.jakarta	","	N"
-"ayamgeprekbahenol	","	N"
-"ayamgeprekjakarta	","	N"
-"rotijohnbogor.cabang_jakarta	","	N"
-"rotipian	","	N"
-"backyard52c	","	N"
-"dapur_mime_jakarta	","	N"
-"rotibuayajakarta	","	N"
-"bunsbite	","	N"
-"roti_john_jakarta	","	N"
-"kiyowo_cake	","	N"
-"kue.snackbox.jakarta	","	N"
-"nastarkejujakarta	","	N"
-"stikkejujakarta	","	N"
-"sikeju.id	","	N"
-"pisangkejuratujakarta	","	N"
-"kuenakjakarta	","	N"
-"tastydessert_4id	","	N"
-"pudingflavors	","	N"
-"papuding_	","	N"
-"pudingized	","	N"
-"saladpudingmomybellva	","	N"
-"pudinghousejkt	","	N"
-"pulittledrinksjakarta	","	N"
-"miejakarta	","	N"
-"miejakarta.cj7	","	N"
-"miejakarta_tamanasri	","	N"
-"miejakartaexpress	","	N"
-"miejakartajogjapardise	","	N"
-"miejakarta29	","	N"
-"miejakartakm229	","	N"
-"mie_jakarta	","	N"
-"miejakartaonebelpark	","	N"
-"mie_jakarta7	","	N"
-"mie_jakarta_batas_kota	","	N"
-"koki.mamajkt	","	N"
-"eric_hiung	","	N"
-"sambal.cumi.pedas	","	N"
-"dapurpenggoda	","	N"
-"dimatahin	","	N"
-"putikcabe	","	N"
-"sambalbantenglombok.jakarta	","	N"
-"sambal.authentic	","	N"
-"sambalsalman	","	N"
-"sambal_sakaw_kemasan	","	N"
-"sambaltobat.jakarta	","	N"
-"sambalpedessan	","	N"
-"sambalandalimanjakarta	","	N"
-"sambalmantapjakarta	","	N"
-"djakartasambal	","	N"
-"miss.spicy.jakarta	","	N"
-"sambalcumey	","	N"
-"ayamsambalsebor	","	N"
-"dapursambalmacan	","	N"
-"seblakinstan_jakarta	","	N"
-"jkt_nyungseblak	","	N"
-"seblakmbahsurojakartaselatan	","	N"
-"mommyindojakarta	","	N"
-"seblakkabayan	","	N"
-"tuangeunceuceurindu_jakarta	","	N"
-"seblakraos	","	N"
-"otak2_jeletotjakarta	","	N"
-"galeri.buah.jakarta	","	N"
-"salad_she	","	N"
-"toko_buah_jakarta	","	N"
-"akang_buah	","	N"
-"nomisalad	","	N"
-"vista_fooddrink	","	N"
-"fruitssalad.id	","	N"
-"kuebuahminijakarta	","	N"
-"tokobuah.jakarta	","	N"
-"saladbuah_mommyshal	","	N"
-"laysweet.id	","	N"
-"moo_salad.buah	","	N"
-"sugarumi_kitchenette	","	N"
-"dapurorin	","	N"
-"sunterbuah	","	N"
-"jual.buah.strawberry.jakarta	","	N"
-"kitchensister58	","	N"
-"sayurbuahjakarta	","	N"
-"selfirasalad	","	N"
-"buahtanganjakarta	","	N"
-"saladby	","	N"
-"dapur.riyuka	","	N"
-"nitip.cims	","	N"
-"mysnackbox_jakarta	","	N"
-"fancy_salad	","	N"
-"escampurjakartaalfajar	","	N"
-"defourthpancakesjakarta	","	N"
-"pancakedurian_07	","	N"
-"jpancakedurian	","	N"
-"pancakedurianbox	","	N"
-"pancake.durian.jakarta	","	N"
-"durianjakarta.id	","	N"
-"pancake_durian_jakarta	","	N"
-"smoochijakarta	","	N"
-"pangsitjakartamasarif	","	N"
-"pangsitjakarta57	","	N"
-"jakartamiepangsit	","	N"
-"miepangsitjakarta56	","	N"
-"me_miepangsitjakarta	","	N"
-"pangsit_mieayam_jakarta	","	N"
-"pangsitmieayamjakartajhon	","	N"
-"mieayamsrmarkotop	","	N"
-"kariimahpangsitmie	","	N"
-"h2_food	","	N"
-"pangsit_jakarta_spj	","	N"
-"d_zemox	","	N"
-"pangsit_buwin	","	N"
-"kebuli.abbasy	","	N"
-"amaliah.barokah	","	N"
-"ratukebulijkt	","	N"
-"kebuliberkahjkt	","	N"
-"store_berkah	","	N"
-"omahiangkitchen	","	N"
-"tahuhotkriuk.jakarta	","	N"
-"tahujj	","	N"
-"omahtahu_jakarta	","	N"
-"lumpia_jakarta_kembang_tahu	","	N"
-"tasuki_jakbar	","	N"
-"tabacon.jakarta	","	N"
-"tahukeritingkribojakarta	","	N"
-"tahutuna.jkt	","	N"
-"tahumamitha.jaktim	","	N"
-"tahubaksopakkumis	","	N"
-"tahubaso_ashmara	","	N"
-"kusuka_snack	","	N"
-"bakcang_jakarta	","	N"
-"kriuk.jkt	","	N"
-"queengeprek25	","	N"
-"geprek_jakarta	","	N"
-"elrikageprek	","	N"
-"baksogorengmercon	","	N"
-"jajannyuuk	","	N"
-"snackersssss_	","	N"
-"pikcahot.official	","	N"
-"miepedasjakarta	","	N"
-"lidipedas_jkt	","	N"
-"cemilan.jkt.id	","	N"
-"cemilan.jakartatimur	","	N"
-"kuekoeoke	","	N"
-"aneka_cemilanjakarta	","	N"
-"jajananjakarta92	","	N"
-"cemilanjakarta_	","	N"
-"cemilan.jakarta.enak	","	N"
-"cemilanjakartaaaaaaa	","	N"
-"barbel_camilan	","	N"
-"asinanjakarta_lili	","	N"
-"rabbit_bakulan	","	N"
-"camilannusantarajakarta	","	N"
-"vielsstoree01	","	N"
-"krendangstreetfood	","	N"
-"sederhanarendang	","	N"
-"asese_rendang	","	N"
-"kuebalokbrownies_jakarta	","	N"
-"agenrendangkemasanjakarta	","	N"
-"rendang.dagingjakarta	","	N"
-"rafa_shopjakarta	","	N"
-"rendang.sapijakarta	","	N"
-"rendangkuu	","	N"
-"rendangsumatera_jakarta	","	N"
-"shoe_jakarta	","	N"
-"bakmijakartasumpitmerah	","	N"
-"bakmijakarta.mdo	","	N"
-"bakmie_jakartaa	","	N"
-"bakmi.jakarta	","	N"
-"asinanjakarta	","	N"
-"asinanjakarta.solo	","	N"
-"asinan_jakartaa	","	N"
-"asinanjakarta_ny.yuli	","	N"
-"asinanjakartahf	","	N"
-"asinan_jakarta_dapurpony	","	N"
-"manisan_jakarta_swangheng	","	N"
-"jualmanisanjakarta	","	N"
-"kolangkalingjakarta	","	N"
-"pandafruitt	","	N"
-"salad_jakut	","	N"
-"bakeline.id	","	N"
-"elysmasembiring	","	N"
-"browniesbundajkt	","	N"
-"lapiskukusjkt	","	N"
-"masterchefrotikukusjakarta	","	N"
-"frozenfoodaja	","	N"
-"makaronijakarta	","	N"
-"makaronispiral_jkt	","	N"
-"makaroni_perih_jakarta	","	N"
-"ochinmakaronijakarta	","	N"
-"makaronikingjkt_	","	N"
-"makaroniking.jkt	","	N"
-"kirunmakarun.jakarta	","	N"
-"makaronibonju_idjaksel	","	N"
-"makaroningocorjakartatimur	","	N"
-"telerizmakaroni_jaktim	","	N"
-"makring_jaktim	","	N"
-"makaronifactoryjakarta	","	N"
-"makaronibozcha_jakarta	","	N"
-"agenmakaronibonju_jakarta	","	N"
-"makaroni.jakarta	","	N"
-"makring_jkt	","	N"
-"makaroni_kakarak_jakarta	","	N"
-"tempe_jakarta	","	N"
-"foodjakarta_	","	N"
-"tempepakmanto	","	N"
-"dekonco_jakarta	","	N"
-"coklatdekonco_jkt	","	N"
-"tempecoklatjakarta	","	N"
-"tempecoklatjakarta0	","	N"
-"maimai.siomai	","	N"
-"gyozahalal	","	N"
-"balihalaljakarta	","	N"
-"sukihalaljakarta	","	N"
-"cateringhalaljakarta	","	N"
-"dapurpuri.jkt	","	N"
-"chinesefoodhalaljakarta	","	N"
-"dimsumhalaljakarta	","	N"
-"mediahoteljakarta	","	N"
-"digimsugum	","	N"
-"waroenkbabejakpus	","	N"
-"mediahoteljaksel	","	N"
-"skincare.halal.nuskin	","	N"
-"muslimbackpackeran_jakarta	","	N"
-"hni.hpai.utankayu	","	N"
-"skincarebpom_bebwhitec	","	N"
-"jasatilang_jakarta	","	N"
-"cafe1617_jakarta	","	N"
-"halalmartje	","	N"
-"siapsajijakarta	","	N"
-"segalaagen_jakartatimur91	","	N"
-"herbal.tiens.jakartaa	","	N"
-"ketanrakyatjakarta	","	N"
-"ketandurenjakartanykesi	","	N"
-"tansu_dees	","	N"
-"tandur_lumerrr_jakarta	","	N"
-"mantan_aja	","	N"
-"jualboluketanitemjakarta	","	N"
-"ketus_jakarta	","	N"
-"salad_buah_jakartabarat	","	N"
-"saladbuahamelia	","	N"
-"ayudyasalad	","	N"
-"dapur_sisil	","	N"
-"saladbuah_durensawit	","	N"
-"saladbuahberkahh	","	N"
-"saladbuah_delle	","	N"
-"saladbuah.inces	","	N"
-"nafi.salad	","	N"
-"salad.buahjkt	","	N"
-"dapurmaii	","	N"
-"salad.buah_jakarta	","	N"
-"mayofruit	","	N"
-"saladbuahdiandra	","	N"
-"siomay.purnama	","	N"
-"siomay_jakarta	","	N"
-"siccakitchen.jkt	","	N"
-"siomaymontok.jkt	","	N"
-"wenac.siomay	","	N"
-"siomaynyonyalanijakarta	","	N"
-"jckitchenjakarta	","	N"
-"karimsiomay.jkt	","	N"
-"rumahjastip.idn	","	N"
-"kasalisa.kitchen	","	N"
-"siomaymeisjkt	","	N"
-"siomay_mama_jkt	","	N"
-"siomay.mamifit.jakarta	","	N"
-"siomay_tehrisa_jaksel	","	N"
-"siomayburonan	","	N"
-"siomay_zuper	","	N"
-"siomaybatagor_jakarta	","	N"
-"siomay61	","	N"
-"nastarjakartaa	","	N"
-"nastar.jakarta	","	N"
-"house.pineapple	","	N"
-"nastarjakarta88	","	N"
-"otak2jakarta	","	N"
-"djakarta_86	","	N"
-"supplier_otakotak	","	N"
-"mammaotakotak.jakarta	","	N"
-"kue.bawangku	","	N"
-"homemade.cakes15	","	N"
-"ke.kuean	","	N"
-"anekakuejkt	","	N"
-"promosiccakitchen	","	N"
-"kuemangkokjakarta	","	N"
-"foodbay.jakarta	","	N"
-"kuebalokoma_jakarta	","	N"
-"jualkueenak_jakarta	","	N"
-"sugarbabe.soes	","	N"
-"kuebalokparikesit.jkt	","	N"
-"momandchubb.id	","	N"
-"kuelebarandijakarta	","	N"
-"cookies.86.maknyus	","	N"
-"monmaison.id	","	N"
-"amanah9991	","	N"
-"kuebalokmalio.jakarta	","	N"
-"risoles.oey	","	N"
-"risolesmayojkt	","	N"
-"jualkuejakarta	","	N"
-"lavistarisoles	","	N"
-"dapurselmon	","	N"
-"dapur.rima.jakartatimur	","	N"
-"dapurmami.jakarta	","	N"
-"pempek_nathan	","	N"
-"pempek.zulaiha	","	N"
-"pempek_monacipinang_	","	N"
-"pempek_pramuka	","	N"
-"pempek_cekpuspa	","	N"
-"tekwan.serpong	","	N"
-"bolulembangjakarta	","	N"
-"kalitaboluuap	","	N"
-"bakso.ebok	","	N"
-"tahubaksobubroto.jkt	","	N"
-"bossbasojkt	","	N"
-"baksosayurjakarta	","	N"
-"hobijajannn_id	","	N"
-"bakso_aci_maknyuz	","	N"
-"jualbaksojakarta	","	N"
-"baksoacijakarta	","	N"
-"baksoacijktbarat	","	N"
-"dapurberkah99.id	","	N"
-"nasitumpengulangtahunjakarta	","	N"
-"jualnasitumpengjakarta	","	N"
-"sedekahnasijakarta	","	N"
-"marketingnasikotakkotak	","	N"
-"pakenasi2nd	","	N"
-"babatsemangat_jakarta	","	N"
-"jualnasikotakjakartaselatan	","	N"
-"nasikuningjakarta	","	N"
-"ayamgeprekkampus_jakarta	","	N"
-"rotimaryamjakarta	","	N"
-"tikusgang_jakarta	","	N"
-"roku.jakarta	","	N"
-"kejuin.azah	","	N"
-"pisangkejukriukjakarta	","	N"
-"almashopandcake	","	N"
-"susupuding_boenda	","	N"
-"puding_murah_jakarta	","	N"
-"miecelor6d	","	N"
-"pokmie.id	","	N"
-"cwiemie_samsamid	","	N"
-"denpau_miejkt	","	N"
-"thisismiejkt	","	N"
-"mieayam_bykimkitchen	","	N"
-"kisamefoods	","	N"
-"mieayam_kingmie	","	N"
-"miehorornyadong	","	N"
-"mie_ayam_siola	","	N"
-"mielidigehel_jakartatimur	","	N"
-"mieayam_bangriyal	","	N"
-"jajananmielidi.id	","	N"
-"siumangjakartabarat	","	N"
-"mieayamjakarta77	","	N"
-"mie_ayam_junita	","	N"
-"kokipapi_jaktim	","	N"
-"hobby_goldfishyuanbao	","	N"
-"sambalsoniapedas	","	N"
-"agensambaljakarta	","	N"
-"sambal_mamah_oey	","	N"
-"seblak_jakarta	","	N"
-"stok.kulkas	","	N"
-"salad.butini	","	N"
-"sayurbuahonlinejkt	","	N"
-"pt_surya_berkat_sentosa_	","	N"
-"durianpancake_jkt	","	N"
-"pancake_durian_jakarta_barat	","	N"
-"bocipancake	","	N"
-"pancakedurianjakartaaa	","	N"
-"nipong_jakarta	","	N"
-"pangsitmie.jakarta	","	N"
-"saurus_team	","	N"
-"pangsit_jakarta354	","	N"
-"laukpauk.jkt	","	N"
-"tahu.tung	","	N"
-"tahu_bakso_jakarta	","	N"
-"keripikpedasbedogan	","	N"
-"prink_pedaskerink	","	N"
-"d.cekerpedas	","	N"
-"cemilanau	","	N"
-"toplesmamake	","	N"
-"cemilankriuk.jkt	","	N"
-"j_licious17	","	N"
-"hepitami.inc	","	N"
-"cemilan.nj	","	N"
-"molagranolajakarta	","	N"
-"dewacemilanjakarta	","	N"
-"krispicrispy	","	N"
-"jajan_cemilan_queenza	","	N"
-"sangdewa.jakartapusat	","	N"
-"khusnaarina280	","	N"
-"tetanggaaku	","	N"
-"cemilaneca	","	N"
-"meliastore07	","	N"
-"cecemilanjkt	","	N"
-"cemilan_jkt	","	N"
-"snysnack	","	N"
-"rabbitbakuljajan	","	N"
-"bakmieirian	","	N"
-"bakmiemantulll__bm	","	N"
-"kingsbakmie_jkt	","	N"
-"juraganasinan_jakarta	","	N"
-"asinan_enak_jakarta	","	N"
-"asinan77jkt	","	N"
-"mayfood_sby	","	N"
-"asinanjkt_mpok_may	","	N"
-"sweetafters.id	","	N"
-"makaronibonju.jakarta.utara	","	N"
-"snackhitsjakarta	","	N"
-"agen_resmi_jakarta	","	N"
-"inaikukujakarta	","	N"
-"dapurnaknan	","	N"
-"saladbuahenakjakarta	","	N"
-"egy.thehomemadecook	","	N"
-"siomay.mama.jakarta	","	N"
+asinan.neneng	,C
+rujakbuahnonik_greenlakecity	,C
+makanan_rumahan_frozen	,C
+bu2rjo_ketsu	,C
+saladtanteku	,C
+buah_saladsegar	,C
+serabipandan_69	,C
+otak_otak_oma	,C
+kebuli_dapurmumtaz	,C
+rosanti_foodbox	,C
+nastar_tho_shien	,C
+tomyummy.food	,C
+tahujeletottaisi_lebakbulus	,C
+sambel.bu.narmi	,C
+escampurbandung_oyen08	,C
+lauk_unie	,C
+lauk_celok	,C
+tarahu.hanglekiu	,C
+hauranawa.sushi	,C
+mandalinda95	,C
+cemilanjakarta46	,C
+kincadurianbetawi	,C
+djuragan_tapeuli	,C
+tapeulimpokindun	,C
+dapur.miah	,C
+mendoan1.jkt	,C
+mendoan_fals	,C
+mendoanmawar	,C
+heycake_id	,C
+siomaypempekmakgita	,C
+queensmartabak	,C
+haskincake	,C
+seahott25	,C
+nasikebuli.btw	,C
+birulauk	,C
+tahukriukyespenggilingan	,C
+ayamgorengsutarti	,C
+osengpedaspincuk_jkt	,C
+cemilan_bangjay	,C
+bubonar	,C
+asinansayurcutebraaay	,C
+lazu.frozen	,C
+cemilan_enak06	,C
+tapeuli_khasbetawi	,C
+tapeulimpokaan	,C
+saladbuahmaiia.jaktim	,C
+dapur.ghaisyanie	,C
+mendoanlegenda	,C
+morisoles_	,C
+risoles_ayong_kelapagading	,	C
+tekwanpopo	,	C
+yessikatan	,	C
+kebuliabdubinsultan	,	C
+mamamasakenak	,	C
+otak_otak_aling	,	C
+asinan.neneng	,C
+rujakbuahnonik_greenlakecity	,C
+makanan_rumahan_frozen	,C
+bu2rjo_ketsu	,C
+saladtanteku	,C
+buah_saladsegar	,C
+serabipandan_69	,C
+otak_otak_oma	,C
+kebuli_dapurmumtaz	,C
+rosanti_foodbox	,C
+nastar_tho_shien	,C
+tomyummy.food	,C
+tahujeletottaisi_lebakbulus	,C
+sambel.bu.narmi	,C
+escampurbandung_oyen08	,C
+lauk_unie	,C
+lauk_celok	,C
+tarahu.hanglekiu	,C
+hauranawa.sushi	,C
+mandalinda95	,C
+cemilanjakarta46	,C
+kincadurianbetawi	,C
+djuragan_tapeuli	,C
+tapeulimpokindun	,C
+dapur.miah	,C
+mendoan1.jkt	,C
+mendoan_fals	,C
+mendoanmawar	,C
+heycake_id	,C
+siomaypempekmakgita	,C
+queensmartabak	,C
+haskincake	,C
+seahott25	,C
+nasikebuli.btw	,C
+birulauk	,C
+tahukriukyespenggilingan	,C
+ayamgorengsutarti	,C
+osengpedaspincuk_jkt	,C
+cemilan_bangjay	,C
+bubonar	,C
+asinansayurcutebraaay	,C
+lazu.frozen	,C
+cemilan_enak06	,C
+tapeuli_khasbetawi	,C
+tapeulimpokaan	,C
+saladbuahmaiia.jaktim	,C
+dapur.ghaisyanie	,C
+mendoanlegenda	,C
+morisoles_	,C
+risoles_ayong_kelapagading	,	C
+tekwanpopo	,	C
+yessikatan	,	C
+kebuliabdubinsultan	,	C
+mamamasakenak	,	C
+otak_otak_aling	,	C
+otakotakmakassar.nat	,C
+kebuli_menteng_pamulang	,C
+tomyam_yummy00	,	N
+anekamakanan_trhi	,	N
+light_pastries	,	N
+risoles_mamatami	,	N
+alaruma.id	,	N
+pempeksanara	,	N
+cemilcimel	,	N
+nasikuningsamarinda	,	N
+kebulijordan.bintaro	,	N
+tahuslawibintaro	,	N
+dkriuk_mak_lambe	,	N
+kriuk_jamaah	,	N
+tahusumedangbunancy	,	N
+ayambakarmadubelbel	,	N
+ayambonbon.id	,	N
+mongaeco	,	N
+anekakue.bunda	,	N
+kuebasah_ciledug	,	N
+fruitmama_id	,	N
+frozenfood.mame	,	N
+rokussabi.id	,	N
+makananfrozen.id	,	N
+dimspacc	,	N
+makaroni_rese	,	N
+tapeulibymaksaroh	,	N
+tapeulinyakmu_bintaro	,	N
+warna125	,	N
+yujakfood	,	N
+negeribuah	,	N
+cirenggeulisjakarta	,	N
+rujakbebegjakarta	,	N
+tomyam.suki1gaming	,	N
+toko_kuejakarta	,	N
+kuejakartatimur	,	N
+kuejakarta_	,	N
+kuekeringjakarta_termurah	,	N
+ollabakes.id	,	N
+kuring.jkt	,	N
+jakartalapislegit	,	N
+anakitchen_id	,	N
+cookiesfactory.jakarta	,	N
+luckysnack_jakarta	,	N
+kue.lebaran.jakarta	,	N
+serunipastry	,	N
+yenyen_store2020	,	N
+chizgocookies	,	N
+gisel.cookies	,	N
+kuekeringjakarta	,	N
+dapurmandana	,	N
+kuekering_jakarta_	,	N
+jual.kuekering_jakarta	,	N
+kuekering.jakarta_	,	N
+kuekering.jakartaa	,	N
+kuepiebrowniesjakarta	,	N
+nastarkuelapismq	,	N
+khasnenekmoyang	,	N
+saltandflourjakarta	,	N
+risoles_bututi	,	N
+jualrisolesjakarta	,	N
+moukue	,	N
+mamam.jakarta	,	N
+dapurmayorii	,	N
+jakarta.risoles	,	N
+heavenlyrisoles.jkt	,	N
+dapurpuspitajkt	,	N
+perabotanmurah24	,	N
+dapurjakartans	,	N
+dapurnonikjkt	,	N
+dapurmande.jakarta	,	N
+dapur_arrumi	,	N
+dapurbanjarjakarta	,	N
+perabotjakarta	,	N
+dapur.appa	,	N
+dapurwalet	,	N
+dapur_talita	,	N
+dapuribuku.jakarta	,	N
+dapur_naziie_jakarta	,	N
+dapur_terogong	,	N
+dapoer_anna.jakarta	,	N
+dapurkesumbajakarta	,	N
+dapur_ny.sian	,	N
+dapurtanteyuli	,	N
+se.dapur.id	,	N
+dapurtorangjakarta	,	N
+dapurjojoy_jkt	,	N
+dapur_mama_antie	,	N
+familisnackjakarta	,	N
+pempek_ama	,	N
+pem_pekjakarta	,	N
+powbowl	,	N
+kedaipempekdian99	,	N
+pempekyence	,	N
+cawanputih	,	N
+pempeklicious	,	N
+pempeknanajakarta	,	N
+simply.kitchenjkt	,	N
+pempek_lemaknianjkt	,	N
+kitchen.jakarta	,	N
+kirimdingin.trijaya	,	N
+pempekkejujakarta	,	N
+pempeksangprabu_jakarta	,	N
+pempekcikning8ulu.id	,	N
+bolujaduljakarta	,	N
+ayanacakes.id	,	N
+bolu_jadoel_jakarta	,	N
+bolususulembangjakarta	,	N
+bolubolujakarta	,	N
+bolulembang.jakartautara	,	N
+siliwangibolukukusjakartabarat	,	N
+madcakes.id	,	N
+kuemurahjakarta	,	N
+bolu_jakarta	,	N
+baksojakartaenakajabogor	,	N
+baksojakarta2017	,	N
+nasitumpengjakarta.id	,	N
+nasitumpengjakartaselatan	,	N
+nasitumpengjakartaa	,	N
+nasitumpengjakartaselatan2	,	N
+nasiulam	,	N
+nasikebulijakarta	,	N
+nasiboxmama.jakarta	,	N
+jakartanasitumpeng	,	N
+poporecipe	,	N
+mora_kitchen_new	,	N
+dapurqu_jakarta	,	N
+nasijinggoputra	,	N
+nasinaboks	,	N
+vigeecateringg	,	N
+desolo.lunchbox	,	N
+nasitimjakarta	,	N
+nasi.box.mama.jakarta	,	N
+gandhok_uti	,	N
+negara.rasa	,	N
+nasigulejakarta	,	N
+senabox.jakarta	,	N
+sholly_kitchen	,	N
+nasikuningbento.jakarta	,	N
+nasikotakjakartatimur	,	N
+liwetandjakarta	,	N
+nasikuningjakarta20	,	N
+nasikuningjakartafranchise	,	N
+nasikuning.jaktim	,	N
+nasikuningjakarta_	,	N
+naskun_jakarta	,	N
+nasikuningpontianak	,	N
+martabak_jakarta_curup	,	N
+martabakjakartasitubondo	,	N
+martabak_bangkaja	,	N
+martabak_mini_jakarta	,	N
+martabakindia_jakarta_bung_ali	,	N
+martabakjablayjakarta	,	N
+martabak_jakarta	,	N
+martabak_jak	,	N
+martabakholanejayajakarta	,	N
+ayamulegmbahman	,	N
+ayamgepreksambellumer.jakarta	,	N
+ayamgeprekbahenol	,	N
+ayamgeprekjakarta	,	N
+rotijohnbogor.cabang_jakarta	,	N
+rotipian	,	N
+backyard52c	,	N
+dapur_mime_jakarta	,	N
+rotibuayajakarta	,	N
+bunsbite	,	N
+roti_john_jakarta	,	N
+kiyowo_cake	,	N
+kue.snackbox.jakarta	,	N
+nastarkejujakarta	,	N
+stikkejujakarta	,	N
+sikeju.id	,	N
+pisangkejuratujakarta	,	N
+kuenakjakarta	,	N
+tastydessert_4id	,	N
+pudingflavors	,	N
+papuding_	,	N
+pudingized	,	N
+saladpudingmomybellva	,	N
+pudinghousejkt	,	N
+pulittledrinksjakarta	,	N
+miejakarta	,	N
+miejakarta.cj7	,	N
+miejakarta_tamanasri	,	N
+miejakartaexpress	,	N
+miejakartajogjapardise	,	N
+miejakarta29	,	N
+miejakartakm229	,	N
+mie_jakarta	,	N
+miejakartaonebelpark	,	N
+mie_jakarta7	,	N
+mie_jakarta_batas_kota	,	N
+koki.mamajkt	,	N
+eric_hiung	,	N
+sambal.cumi.pedas	,	N
+dapurpenggoda	,	N
+dimatahin	,	N
+putikcabe	,	N
+sambalbantenglombok.jakarta	,	N
+sambal.authentic	,	N
+sambalsalman	,	N
+sambal_sakaw_kemasan	,	N
+sambaltobat.jakarta	,	N
+sambalpedessan	,	N
+sambalandalimanjakarta	,	N
+sambalmantapjakarta	,	N
+djakartasambal	,	N
+miss.spicy.jakarta	,	N
+sambalcumey	,	N
+ayamsambalsebor	,	N
+dapursambalmacan	,	N
+seblakinstan_jakarta	,	N
+jkt_nyungseblak	,	N
+seblakmbahsurojakartaselatan	,	N
+mommyindojakarta	,	N
+seblakkabayan	,	N
+tuangeunceuceurindu_jakarta	,	N
+seblakraos	,	N
+otak2_jeletotjakarta	,	N
+galeri.buah.jakarta	,	N
+salad_she	,	N
+toko_buah_jakarta	,	N
+akang_buah	,	N
+nomisalad	,	N
+vista_fooddrink	,	N
+fruitssalad.id	,	N
+kuebuahminijakarta	,	N
+tokobuah.jakarta	,	N
+saladbuah_mommyshal	,	N
+laysweet.id	,	N
+moo_salad.buah	,	N
+sugarumi_kitchenette	,	N
+dapurorin	,	N
+sunterbuah	,	N
+jual.buah.strawberry.jakarta	,	N
+kitchensister58	,	N
+sayurbuahjakarta	,	N
+selfirasalad	,	N
+buahtanganjakarta	,	N
+saladby	,	N
+dapur.riyuka	,	N
+nitip.cims	,	N
+mysnackbox_jakarta	,	N
+fancy_salad	,	N
+escampurjakartaalfajar	,	N
+defourthpancakesjakarta	,	N
+pancakedurian_07	,	N
+jpancakedurian	,	N
+pancakedurianbox	,	N
+pancake.durian.jakarta	,	N
+durianjakarta.id	,	N
+pancake_durian_jakarta	,	N
+smoochijakarta	,	N
+pangsitjakartamasarif	,	N
+pangsitjakarta57	,	N
+jakartamiepangsit	,	N
+miepangsitjakarta56	,	N
+me_miepangsitjakarta	,	N
+pangsit_mieayam_jakarta	,	N
+pangsitmieayamjakartajhon	,	N
+mieayamsrmarkotop	,	N
+kariimahpangsitmie	,	N
+h2_food	,	N
+pangsit_jakarta_spj	,	N
+d_zemox	,	N
+pangsit_buwin	,	N
+kebuli.abbasy	,	N
+amaliah.barokah	,	N
+ratukebulijkt	,	N
+kebuliberkahjkt	,	N
+store_berkah	,	N
+omahiangkitchen	,	N
+tahuhotkriuk.jakarta	,	N
+tahujj	,	N
+omahtahu_jakarta	,	N
+lumpia_jakarta_kembang_tahu	,	N
+tasuki_jakbar	,	N
+tabacon.jakarta	,	N
+tahukeritingkribojakarta	,	N
+tahutuna.jkt	,	N
+tahumamitha.jaktim	,	N
+tahubaksopakkumis	,	N
+tahubaso_ashmara	,	N
+kusuka_snack	,	N
+bakcang_jakarta	,	N
+kriuk.jkt	,	N
+queengeprek25	,	N
+geprek_jakarta	,	N
+elrikageprek	,	N
+baksogorengmercon	,	N
+jajannyuuk	,	N
+snackersssss_	,	N
+pikcahot.official	,	N
+miepedasjakarta	,	N
+lidipedas_jkt	,	N
+cemilan.jkt.id	,	N
+cemilan.jakartatimur	,	N
+kuekoeoke	,	N
+aneka_cemilanjakarta	,	N
+jajananjakarta92	,	N
+cemilanjakarta_	,	N
+cemilan.jakarta.enak	,	N
+cemilanjakartaaaaaaa	,	N
+barbel_camilan	,	N
+asinanjakarta_lili	,	N
+rabbit_bakulan	,	N
+camilannusantarajakarta	,	N
+vielsstoree01	,	N
+krendangstreetfood	,	N
+sederhanarendang	,	N
+asese_rendang	,	N
+kuebalokbrownies_jakarta	,	N
+agenrendangkemasanjakarta	,	N
+rendang.dagingjakarta	,	N
+rafa_shopjakarta	,	N
+rendang.sapijakarta	,	N
+rendangkuu	,	N
+rendangsumatera_jakarta	,	N
+shoe_jakarta	,	N
+bakmijakartasumpitmerah	,	N
+bakmijakarta.mdo	,	N
+bakmie_jakartaa	,	N
+bakmi.jakarta	,	N
+asinanjakarta	,	N
+asinanjakarta.solo	,	N
+asinan_jakartaa	,	N
+asinanjakarta_ny.yuli	,	N
+asinanjakartahf	,	N
+asinan_jakarta_dapurpony	,	N
+manisan_jakarta_swangheng	,	N
+jualmanisanjakarta	,	N
+kolangkalingjakarta	,	N
+pandafruitt	,	N
+salad_jakut	,	N
+bakeline.id	,	N
+elysmasembiring	,	N
+browniesbundajkt	,	N
+lapiskukusjkt	,	N
+masterchefrotikukusjakarta	,	N
+frozenfoodaja	,	N
+makaronijakarta	,	N
+makaronispiral_jkt	,	N
+makaroni_perih_jakarta	,	N
+ochinmakaronijakarta	,	N
+makaronikingjkt_	,	N
+makaroniking.jkt	,	N
+kirunmakarun.jakarta	,	N
+makaronibonju_idjaksel	,	N
+makaroningocorjakartatimur	,	N
+telerizmakaroni_jaktim	,	N
+makring_jaktim	,	N
+makaronifactoryjakarta	,	N
+makaronibozcha_jakarta	,	N
+agenmakaronibonju_jakarta	,	N
+makaroni.jakarta	,	N
+makring_jkt	,	N
+makaroni_kakarak_jakarta	,	N
+tempe_jakarta	,	N
+foodjakarta_	,	N
+tempepakmanto	,	N
+dekonco_jakarta	,	N
+coklatdekonco_jkt	,	N
+tempecoklatjakarta	,	N
+tempecoklatjakarta0	,	N
+maimai.siomai	,	N
+gyozahalal	,	N
+balihalaljakarta	,	N
+sukihalaljakarta	,	N
+cateringhalaljakarta	,	N
+dapurpuri.jkt	,	N
+chinesefoodhalaljakarta	,	N
+dimsumhalaljakarta	,	N
+mediahoteljakarta	,	N
+digimsugum	,	N
+waroenkbabejakpus	,	N
+mediahoteljaksel	,	N
+skincare.halal.nuskin	,	N
+muslimbackpackeran_jakarta	,	N
+hni.hpai.utankayu	,	N
+skincarebpom_bebwhitec	,	N
+jasatilang_jakarta	,	N
+cafe1617_jakarta	,	N
+halalmartje	,	N
+siapsajijakarta	,	N
+segalaagen_jakartatimur91	,	N
+herbal.tiens.jakartaa	,	N
+ketanrakyatjakarta	,	N
+ketandurenjakartanykesi	,	N
+tansu_dees	,	N
+tandur_lumerrr_jakarta	,	N
+mantan_aja	,	N
+jualboluketanitemjakarta	,	N
+ketus_jakarta	,	N
+salad_buah_jakartabarat	,	N
+saladbuahamelia	,	N
+ayudyasalad	,	N
+dapur_sisil	,	N
+saladbuah_durensawit	,	N
+saladbuahberkahh	,	N
+saladbuah_delle	,	N
+saladbuah.inces	,	N
+nafi.salad	,	N
+salad.buahjkt	,	N
+dapurmaii	,	N
+salad.buah_jakarta	,	N
+mayofruit	,	N
+saladbuahdiandra	,	N
+siomay.purnama	,	N
+siomay_jakarta	,	N
+siccakitchen.jkt	,	N
+siomaymontok.jkt	,	N
+wenac.siomay	,	N
+siomaynyonyalanijakarta	,	N
+jckitchenjakarta	,	N
+karimsiomay.jkt	,	N
+rumahjastip.idn	,	N
+kasalisa.kitchen	,	N
+siomaymeisjkt	,	N
+siomay_mama_jkt	,	N
+siomay.mamifit.jakarta	,	N
+siomay_tehrisa_jaksel	,	N
+siomayburonan	,	N
+siomay_zuper	,	N
+siomaybatagor_jakarta	,	N
+siomay61	,	N
+nastarjakartaa	,	N
+nastar.jakarta	,	N
+house.pineapple	,	N
+nastarjakarta88	,	N
+otak2jakarta	,	N
+djakarta_86	,	N
+supplier_otakotak	,	N
+mammaotakotak.jakarta	,	N
+kue.bawangku	,	N
+homemade.cakes15	,	N
+ke.kuean	,	N
+anekakuejkt	,	N
+promosiccakitchen	,	N
+kuemangkokjakarta	,	N
+foodbay.jakarta	,	N
+kuebalokoma_jakarta	,	N
+jualkueenak_jakarta	,	N
+sugarbabe.soes	,	N
+kuebalokparikesit.jkt	,	N
+momandchubb.id	,	N
+kuelebarandijakarta	,	N
+cookies.86.maknyus	,	N
+monmaison.id	,	N
+amanah9991	,	N
+kuebalokmalio.jakarta	,	N
+risoles.oey	,	N
+risolesmayojkt	,	N
+jualkuejakarta	,	N
+lavistarisoles	,	N
+dapurselmon	,	N
+dapur.rima.jakartatimur	,	N
+dapurmami.jakarta	,	N
+pempek_nathan	,	N
+pempek.zulaiha	,	N
+pempek_monacipinang_	,	N
+pempek_pramuka	,	N
+pempek_cekpuspa	,	N
+tekwan.serpong	,	N
+bolulembangjakarta	,	N
+kalitaboluuap	,	N
+bakso.ebok	,	N
+tahubaksobubroto.jkt	,	N
+bossbasojkt	,	N
+baksosayurjakarta	,	N
+hobijajannn_id	,	N
+bakso_aci_maknyuz	,	N
+jualbaksojakarta	,	N
+baksoacijakarta	,	N
+baksoacijktbarat	,	N
+dapurberkah99.id	,	N
+nasitumpengulangtahunjakarta	,	N
+jualnasitumpengjakarta	,	N
+sedekahnasijakarta	,	N
+marketingnasikotakkotak	,	N
+pakenasi2nd	,	N
+babatsemangat_jakarta	,	N
+jualnasikotakjakartaselatan	,	N
+nasikuningjakarta	,	N
+ayamgeprekkampus_jakarta	,	N
+rotimaryamjakarta	,	N
+tikusgang_jakarta	,	N
+roku.jakarta	,	N
+kejuin.azah	,	N
+pisangkejukriukjakarta	,	N
+almashopandcake	,	N
+susupuding_boenda	,	N
+puding_murah_jakarta	,	N
+miecelor6d	,	N
+pokmie.id	,	N
+cwiemie_samsamid	,	N
+denpau_miejkt	,	N
+thisismiejkt	,	N
+mieayam_bykimkitchen	,	N
+kisamefoods	,	N
+mieayam_kingmie	,	N
+miehorornyadong	,	N
+mie_ayam_siola	,	N
+mielidigehel_jakartatimur	,	N
+mieayam_bangriyal	,	N
+jajananmielidi.id	,	N
+siumangjakartabarat	,	N
+mieayamjakarta77	,	N
+mie_ayam_junita	,	N
+kokipapi_jaktim	,	N
+hobby_goldfishyuanbao	,	N
+sambalsoniapedas	,	N
+agensambaljakarta	,	N
+sambal_mamah_oey	,	N
+seblak_jakarta	,	N
+stok.kulkas	,	N
+salad.butini	,	N
+sayurbuahonlinejkt	,	N
+pt_surya_berkat_sentosa_	,	N
+durianpancake_jkt	,	N
+pancake_durian_jakarta_barat	,	N
+bocipancake	,	N
+pancakedurianjakartaaa	,	N
+nipong_jakarta	,	N
+pangsitmie.jakarta	,	N
+saurus_team	,	N
+pangsit_jakarta354	,	N
+laukpauk.jkt	,	N
+tahu.tung	,	N
+tahu_bakso_jakarta	,	N
+keripikpedasbedogan	,	N
+prink_pedaskerink	,	N
+d.cekerpedas	,	N
+cemilanau	,	N
+toplesmamake	,	N
+cemilankriuk.jkt	,	N
+j_licious17	,	N
+hepitami.inc	,	N
+cemilan.nj	,	N
+molagranolajakarta	,	N
+dewacemilanjakarta	,	N
+krispicrispy	,	N
+jajan_cemilan_queenza	,	N
+sangdewa.jakartapusat	,	N
+khusnaarina280	,	N
+tetanggaaku	,	N
+cemilaneca	,	N
+meliastore07	,	N
+cecemilanjkt	,	N
+cemilan_jkt	,	N
+snysnack	,	N
+rabbitbakuljajan	,	N
+bakmieirian	,	N
+bakmiemantulll__bm	,	N
+kingsbakmie_jkt	,	N
+juraganasinan_jakarta	,	N
+asinan_enak_jakarta	,	N
+asinan77jkt	,	N
+mayfood_sby	,	N
+asinanjkt_mpok_may	,	N
+sweetafters.id	,	N
+makaronibonju.jakarta.utara	,	N
+snackhitsjakarta	,	N
+agen_resmi_jakarta	,	N
+inaikukujakarta	,	N
+dapurnaknan	,	N
+saladbuahenakjakarta	,	N
+egy.thehomemadecook	,	N
+siomay.mama.jakarta	,	N
 excellent_cakery,N
 rendangsuwir_rendangjengkol,N
 nasiudukbuhaji_tebetraya,N
@@ -708,18 +761,18 @@ fiec21_m9,N
 yanti.ha,N
 kezia_santi,N
 fleur.de.caca,N
-"pangsitedun	","	N"
-"kebuli_aljabar	","	N"
-"kebulihabibie_slipi	","	N"
-"ayambakarmadu2saudara	","	N"
-"ayambakarpelita	","	N"
-"ayamkremesjogja	","	N"
-"ayam_goreng_levana	","	N"
-"kuebasah_enak	","	N"
-"rendang.iin	","	N"
-"rumahboi.id	","	N"
-"asinanserba15000	","	N"
-"asinan_sayur_asyik_rasanya	","	N"
+pangsitedun	,	N
+kebuli_aljabar	,	N
+kebulihabibie_slipi	,	N
+ayambakarmadu2saudara	,	N
+ayambakarpelita	,	N
+ayamkremesjogja	,	N
+ayam_goreng_levana	,	N
+kuebasah_enak	,	N
+rendang.iin	,	N
+rumahboi.id	,	N
+asinanserba15000	,	N
+asinan_sayur_asyik_rasanya	,	N
 gyleasure,N
 jojosbakeology,N
 madooindonesia,N
@@ -921,3 +974,877 @@ betta.betawimodern,N
 bursum_surupandan,N
 nonakidsfashion,N
 jacket_q1,N
+otakotakmakassar.nat	,	N
+kebuli_menteng_pamulang	,	N
+acosuki_and_cookies	,	N
+tomyamcu	,	N
+tomyam_yummy00	,	N
+anekamakanan_trhi	,	N
+light_pastries	,	N
+risoles_mamatami	,	N
+alaruma.id	,	N
+pempeksanara	,	N
+cemilcimel	,	N
+nasikuningsamarinda	,	N
+kebulijordan.bintaro	,	N
+tahuslawibintaro	,	N
+dkriuk_mak_lambe	,	N
+kriuk_jamaah	,	N
+tahusumedangbunancy	,	N
+ayambakarmadubelbel	,	N
+ayambonbon.id	,	N
+mongaeco	,	N
+anekakue.bunda	,	N
+kuebasah_ciledug	,	N
+fruitmama_id	,	N
+frozenfood.mame	,	N
+rokussabi.id	,	N
+makananfrozen.id	,	N
+dimspacc	,	N
+makaroni_rese	,	N
+tapeulibymaksaroh	,	N
+tapeulinyakmu_bintaro	,	N
+warna125	,	N
+yujakfood	,	N
+negeribuah	,	N
+cirenggeulisjakarta	,	N
+rujakbebegjakarta	,	N
+tomyam.suki1gaming	,	N
+toko_kuejakarta	,	N
+kuejakartatimur	,	N
+kuejakarta_	,	N
+kuekeringjakarta_termurah	,	N
+ollabakes.id	,	N
+kuring.jkt	,	N
+jakartalapislegit	,	N
+anakitchen_id	,	N
+cookiesfactory.jakarta	,	N
+luckysnack_jakarta	,	N
+kue.lebaran.jakarta	,	N
+serunipastry	,	N
+yenyen_store2020	,	N
+chizgocookies	,	N
+gisel.cookies	,	N
+kuekeringjakarta	,	N
+dapurmandana	,	N
+kuekering_jakarta_	,	N
+jual.kuekering_jakarta	,	N
+kuekering.jakarta_	,	N
+kuekering.jakartaa	,	N
+kuepiebrowniesjakarta	,	N
+nastarkuelapismq	,	N
+khasnenekmoyang	,	N
+saltandflourjakarta	,	N
+risoles_bututi	,	N
+jualrisolesjakarta	,	N
+moukue	,	N
+mamam.jakarta	,	N
+dapurmayorii	,	N
+jakarta.risoles	,	N
+heavenlyrisoles.jkt	,	N
+dapurpuspitajkt	,	N
+perabotanmurah24	,	N
+dapurjakartans	,	N
+dapurnonikjkt	,	N
+dapurmande.jakarta	,	N
+dapur_arrumi	,	N
+dapurbanjarjakarta	,	N
+perabotjakarta	,	N
+dapur.appa	,	N
+dapurwalet	,	N
+dapur_talita	,	N
+dapuribuku.jakarta	,	N
+dapur_naziie_jakarta	,	N
+dapur_terogong	,	N
+dapoer_anna.jakarta	,	N
+dapurkesumbajakarta	,	N
+dapur_ny.sian	,	N
+dapurtanteyuli	,	N
+se.dapur.id	,	N
+dapurtorangjakarta	,	N
+dapurjojoy_jkt	,	N
+dapur_mama_antie	,	N
+familisnackjakarta	,	N
+pempek_ama	,	N
+pem_pekjakarta	,	N
+powbowl	,	N
+kedaipempekdian99	,	N
+pempekyence	,	N
+cawanputih	,	N
+pempeklicious	,	N
+pempeknanajakarta	,	N
+simply.kitchenjkt	,	N
+pempek_lemaknianjkt	,	N
+kitchen.jakarta	,	N
+kirimdingin.trijaya	,	N
+pempekkejujakarta	,	N
+pempeksangprabu_jakarta	,	N
+pempekcikning8ulu.id	,	N
+bolujaduljakarta	,	N
+ayanacakes.id	,	N
+bolu_jadoel_jakarta	,	N
+bolususulembangjakarta	,	N
+bolubolujakarta	,	N
+bolulembang.jakartautara	,	N
+siliwangibolukukusjakartabarat	,	N
+madcakes.id	,	N
+kuemurahjakarta	,	N
+bolu_jakarta	,	N
+baksojakartaenakajabogor	,	N
+baksojakarta2017	,	N
+nasitumpengjakarta.id	,	N
+nasitumpengjakartaselatan	,	N
+nasitumpengjakartaa	,	N
+nasitumpengjakartaselatan2	,	N
+nasiulam	,	N
+nasikebulijakarta	,	N
+nasiboxmama.jakarta	,	N
+jakartanasitumpeng	,	N
+poporecipe	,	N
+mora_kitchen_new	,	N
+dapurqu_jakarta	,	N
+nasijinggoputra	,	N
+nasinaboks	,	N
+vigeecateringg	,	N
+desolo.lunchbox	,	N
+nasitimjakarta	,	N
+nasi.box.mama.jakarta	,	N
+gandhok_uti	,	N
+negara.rasa	,	N
+nasigulejakarta	,	N
+senabox.jakarta	,	N
+sholly_kitchen	,	N
+nasikuningbento.jakarta	,	N
+nasikotakjakartatimur	,	N
+liwetandjakarta	,	N
+nasikuningjakarta20	,	N
+nasikuningjakartafranchise	,	N
+nasikuning.jaktim	,	N
+nasikuningjakarta_	,	N
+naskun_jakarta	,	N
+nasikuningpontianak	,	N
+martabak_jakarta_curup	,	N
+martabakjakartasitubondo	,	N
+martabak_bangkaja	,	N
+martabak_mini_jakarta	,	N
+martabakindia_jakarta_bung_ali	,	N
+martabakjablayjakarta	,	N
+martabak_jakarta	,	N
+martabak_jak	,	N
+martabakholanejayajakarta	,	N
+ayamulegmbahman	,	N
+ayamgepreksambellumer.jakarta	,	N
+ayamgeprekbahenol	,	N
+ayamgeprekjakarta	,	N
+rotijohnbogor.cabang_jakarta	,	N
+rotipian	,	N
+backyard52c	,	N
+dapur_mime_jakarta	,	N
+rotibuayajakarta	,	N
+bunsbite	,	N
+roti_john_jakarta	,	N
+kiyowo_cake	,	N
+kue.snackbox.jakarta	,	N
+nastarkejujakarta	,	N
+stikkejujakarta	,	N
+sikeju.id	,	N
+pisangkejuratujakarta	,	N
+kuenakjakarta	,	N
+tastydessert_4id	,	N
+pudingflavors	,	N
+papuding_	,	N
+pudingized	,	N
+saladpudingmomybellva	,	N
+pudinghousejkt	,	N
+pulittledrinksjakarta	,	N
+miejakarta	,	N
+miejakarta.cj7	,	N
+miejakarta_tamanasri	,	N
+miejakartaexpress	,	N
+miejakartajogjapardise	,	N
+miejakarta29	,	N
+miejakartakm229	,	N
+mie_jakarta	,	N
+miejakartaonebelpark	,	N
+mie_jakarta7	,	N
+mie_jakarta_batas_kota	,	N
+koki.mamajkt	,	N
+eric_hiung	,	N
+sambal.cumi.pedas	,	N
+dapurpenggoda	,	N
+dimatahin	,	N
+putikcabe	,	N
+sambalbantenglombok.jakarta	,	N
+sambal.authentic	,	N
+sambalsalman	,	N
+sambal_sakaw_kemasan	,	N
+sambaltobat.jakarta	,	N
+sambalpedessan	,	N
+sambalandalimanjakarta	,	N
+sambalmantapjakarta	,	N
+djakartasambal	,	N
+miss.spicy.jakarta	,	N
+sambalcumey	,	N
+ayamsambalsebor	,	N
+dapursambalmacan	,	N
+seblakinstan_jakarta	,	N
+jkt_nyungseblak	,	N
+seblakmbahsurojakartaselatan	,	N
+mommyindojakarta	,	N
+seblakkabayan	,	N
+tuangeunceuceurindu_jakarta	,	N
+seblakraos	,	N
+otak2_jeletotjakarta	,	N
+galeri.buah.jakarta	,	N
+salad_she	,	N
+toko_buah_jakarta	,	N
+akang_buah	,	N
+nomisalad	,	N
+vista_fooddrink	,	N
+fruitssalad.id	,	N
+kuebuahminijakarta	,	N
+tokobuah.jakarta	,	N
+saladbuah_mommyshal	,	N
+laysweet.id	,	N
+moo_salad.buah	,	N
+sugarumi_kitchenette	,	N
+dapurorin	,	N
+sunterbuah	,	N
+jual.buah.strawberry.jakarta	,	N
+kitchensister58	,	N
+sayurbuahjakarta	,	N
+selfirasalad	,	N
+buahtanganjakarta	,	N
+saladby	,	N
+dapur.riyuka	,	N
+nitip.cims	,	N
+mysnackbox_jakarta	,	N
+fancy_salad	,	N
+escampurjakartaalfajar	,	N
+defourthpancakesjakarta	,	N
+pancakedurian_07	,	N
+jpancakedurian	,	N
+pancakedurianbox	,	N
+pancake.durian.jakarta	,	N
+durianjakarta.id	,	N
+pancake_durian_jakarta	,	N
+smoochijakarta	,	N
+pangsitjakartamasarif	,	N
+pangsitjakarta57	,	N
+jakartamiepangsit	,	N
+miepangsitjakarta56	,	N
+me_miepangsitjakarta	,	N
+pangsit_mieayam_jakarta	,	N
+pangsitmieayamjakartajhon	,	N
+mieayamsrmarkotop	,	N
+kariimahpangsitmie	,	N
+h2_food	,	N
+pangsit_jakarta_spj	,	N
+d_zemox	,	N
+pangsit_buwin	,	N
+kebuli.abbasy	,	N
+amaliah.barokah	,	N
+ratukebulijkt	,	N
+kebuliberkahjkt	,	N
+store_berkah	,	N
+omahiangkitchen	,	N
+tahuhotkriuk.jakarta	,	N
+tahujj	,	N
+omahtahu_jakarta	,	N
+lumpia_jakarta_kembang_tahu	,	N
+tasuki_jakbar	,	N
+tabacon.jakarta	,	N
+tahukeritingkribojakarta	,	N
+tahutuna.jkt	,	N
+tahumamitha.jaktim	,	N
+tahubaksopakkumis	,	N
+tahubaso_ashmara	,	N
+kusuka_snack	,	N
+bakcang_jakarta	,	N
+kriuk.jkt	,	N
+queengeprek25	,	N
+geprek_jakarta	,	N
+elrikageprek	,	N
+baksogorengmercon	,	N
+jajannyuuk	,	N
+snackersssss_	,	N
+pikcahot.official	,	N
+miepedasjakarta	,	N
+lidipedas_jkt	,	N
+cemilan.jkt.id	,	N
+cemilan.jakartatimur	,	N
+kuekoeoke	,	N
+aneka_cemilanjakarta	,	N
+jajananjakarta92	,	N
+cemilanjakarta_	,	N
+cemilan.jakarta.enak	,	N
+cemilanjakartaaaaaaa	,	N
+barbel_camilan	,	N
+asinanjakarta_lili	,	N
+rabbit_bakulan	,	N
+camilannusantarajakarta	,	N
+vielsstoree01	,	N
+krendangstreetfood	,	N
+sederhanarendang	,	N
+asese_rendang	,	N
+kuebalokbrownies_jakarta	,	N
+agenrendangkemasanjakarta	,	N
+rendang.dagingjakarta	,	N
+rafa_shopjakarta	,	N
+rendang.sapijakarta	,	N
+rendangkuu	,	N
+rendangsumatera_jakarta	,	N
+shoe_jakarta	,	N
+bakmijakartasumpitmerah	,	N
+bakmijakarta.mdo	,	N
+bakmie_jakartaa	,	N
+bakmi.jakarta	,	N
+asinanjakarta	,	N
+asinanjakarta.solo	,	N
+asinan_jakartaa	,	N
+asinanjakarta_ny.yuli	,	N
+asinanjakartahf	,	N
+asinan_jakarta_dapurpony	,	N
+manisan_jakarta_swangheng	,	N
+jualmanisanjakarta	,	N
+kolangkalingjakarta	,	N
+pandafruitt	,	N
+salad_jakut	,	N
+bakeline.id	,	N
+elysmasembiring	,	N
+browniesbundajkt	,	N
+lapiskukusjkt	,	N
+masterchefrotikukusjakarta	,	N
+frozenfoodaja	,	N
+makaronijakarta	,	N
+makaronispiral_jkt	,	N
+makaroni_perih_jakarta	,	N
+ochinmakaronijakarta	,	N
+makaronikingjkt_	,	N
+makaroniking.jkt	,	N
+kirunmakarun.jakarta	,	N
+makaronibonju_idjaksel	,	N
+makaroningocorjakartatimur	,	N
+telerizmakaroni_jaktim	,	N
+makring_jaktim	,	N
+makaronifactoryjakarta	,	N
+makaronibozcha_jakarta	,	N
+agenmakaronibonju_jakarta	,	N
+makaroni.jakarta	,	N
+makring_jkt	,	N
+makaroni_kakarak_jakarta	,	N
+tempe_jakarta	,	N
+foodjakarta_	,	N
+tempepakmanto	,	N
+dekonco_jakarta	,	N
+coklatdekonco_jkt	,	N
+tempecoklatjakarta	,	N
+tempecoklatjakarta0	,	N
+maimai.siomai	,	N
+gyozahalal	,	N
+balihalaljakarta	,	N
+sukihalaljakarta	,	N
+cateringhalaljakarta	,	N
+dapurpuri.jkt	,	N
+chinesefoodhalaljakarta	,	N
+dimsumhalaljakarta	,	N
+mediahoteljakarta	,	N
+digimsugum	,	N
+waroenkbabejakpus	,	N
+mediahoteljaksel	,	N
+skincare.halal.nuskin	,	N
+muslimbackpackeran_jakarta	,	N
+hni.hpai.utankayu	,	N
+skincarebpom_bebwhitec	,	N
+jasatilang_jakarta	,	N
+cafe1617_jakarta	,	N
+halalmartje	,	N
+siapsajijakarta	,	N
+segalaagen_jakartatimur91	,	N
+herbal.tiens.jakartaa	,	N
+ketanrakyatjakarta	,	N
+ketandurenjakartanykesi	,	N
+tansu_dees	,	N
+tandur_lumerrr_jakarta	,	N
+mantan_aja	,	N
+jualboluketanitemjakarta	,	N
+ketus_jakarta	,	N
+salad_buah_jakartabarat	,	N
+saladbuahamelia	,	N
+ayudyasalad	,	N
+dapur_sisil	,	N
+saladbuah_durensawit	,	N
+saladbuahberkahh	,	N
+saladbuah_delle	,	N
+saladbuah.inces	,	N
+nafi.salad	,	N
+salad.buahjkt	,	N
+dapurmaii	,	N
+salad.buah_jakarta	,	N
+mayofruit	,	N
+saladbuahdiandra	,	N
+siomay.purnama	,	N
+siomay_jakarta	,	N
+siccakitchen.jkt	,	N
+siomaymontok.jkt	,	N
+wenac.siomay	,	N
+siomaynyonyalanijakarta	,	N
+jckitchenjakarta	,	N
+karimsiomay.jkt	,	N
+rumahjastip.idn	,	N
+kasalisa.kitchen	,	N
+siomaymeisjkt	,	N
+siomay_mama_jkt	,	N
+siomay.mamifit.jakarta	,	N
+siomay_tehrisa_jaksel	,	N
+siomayburonan	,	N
+siomay_zuper	,	N
+siomaybatagor_jakarta	,	N
+siomay61	,	N
+nastarjakartaa	,	N
+nastar.jakarta	,	N
+house.pineapple	,	N
+nastarjakarta88	,	N
+otak2jakarta	,	N
+djakarta_86	,	N
+supplier_otakotak	,	N
+mammaotakotak.jakarta	,	N
+kue.bawangku	,	N
+homemade.cakes15	,	N
+ke.kuean	,	N
+anekakuejkt	,	N
+promosiccakitchen	,	N
+kuemangkokjakarta	,	N
+foodbay.jakarta	,	N
+kuebalokoma_jakarta	,	N
+jualkueenak_jakarta	,	N
+sugarbabe.soes	,	N
+kuebalokparikesit.jkt	,	N
+momandchubb.id	,	N
+kuelebarandijakarta	,	N
+cookies.86.maknyus	,	N
+monmaison.id	,	N
+amanah9991	,	N
+kuebalokmalio.jakarta	,	N
+risoles.oey	,	N
+risolesmayojkt	,	N
+jualkuejakarta	,	N
+lavistarisoles	,	N
+dapurselmon	,	N
+dapur.rima.jakartatimur	,	N
+dapurmami.jakarta	,	N
+pempek_nathan	,	N
+pempek.zulaiha	,	N
+pempek_monacipinang_	,	N
+pempek_pramuka	,	N
+pempek_cekpuspa	,	N
+tekwan.serpong	,	N
+bolulembangjakarta	,	N
+kalitaboluuap	,	N
+bakso.ebok	,	N
+tahubaksobubroto.jkt	,	N
+bossbasojkt	,	N
+baksosayurjakarta	,	N
+hobijajannn_id	,	N
+bakso_aci_maknyuz	,	N
+jualbaksojakarta	,	N
+baksoacijakarta	,	N
+baksoacijktbarat	,	N
+dapurberkah99.id	,	N
+nasitumpengulangtahunjakarta	,	N
+jualnasitumpengjakarta	,	N
+sedekahnasijakarta	,	N
+marketingnasikotakkotak	,	N
+pakenasi2nd	,	N
+babatsemangat_jakarta	,	N
+jualnasikotakjakartaselatan	,	N
+nasikuningjakarta	,	N
+ayamgeprekkampus_jakarta	,	N
+rotimaryamjakarta	,	N
+tikusgang_jakarta	,	N
+roku.jakarta	,	N
+kejuin.azah	,	N
+pisangkejukriukjakarta	,	N
+almashopandcake	,	N
+susupuding_boenda	,	N
+puding_murah_jakarta	,	N
+miecelor6d	,	N
+pokmie.id	,	N
+cwiemie_samsamid	,	N
+denpau_miejkt	,	N
+thisismiejkt	,	N
+mieayam_bykimkitchen	,	N
+kisamefoods	,	N
+mieayam_kingmie	,	N
+miehorornyadong	,	N
+mie_ayam_siola	,	N
+mielidigehel_jakartatimur	,	N
+mieayam_bangriyal	,	N
+jajananmielidi.id	,	N
+siumangjakartabarat	,	N
+mieayamjakarta77	,	N
+mie_ayam_junita	,	N
+kokipapi_jaktim	,	N
+hobby_goldfishyuanbao	,	N
+sambalsoniapedas	,	N
+agensambaljakarta	,	N
+sambal_mamah_oey	,	N
+seblak_jakarta	,	N
+stok.kulkas	,	N
+salad.butini	,	N
+sayurbuahonlinejkt	,	N
+pt_surya_berkat_sentosa_	,	N
+durianpancake_jkt	,	N
+pancake_durian_jakarta_barat	,	N
+bocipancake	,	N
+pancakedurianjakartaaa	,	N
+nipong_jakarta	,	N
+pangsitmie.jakarta	,	N
+saurus_team	,	N
+pangsit_jakarta354	,	N
+laukpauk.jkt	,	N
+tahu.tung	,	N
+tahu_bakso_jakarta	,	N
+keripikpedasbedogan	,	N
+prink_pedaskerink	,	N
+d.cekerpedas	,	N
+cemilanau	,	N
+toplesmamake	,	N
+cemilankriuk.jkt	,	N
+j_licious17	,	N
+hepitami.inc	,	N
+cemilan.nj	,	N
+molagranolajakarta	,	N
+dewacemilanjakarta	,	N
+krispicrispy	,	N
+jajan_cemilan_queenza	,	N
+sangdewa.jakartapusat	,	N
+khusnaarina280	,	N
+tetanggaaku	,	N
+cemilaneca	,	N
+meliastore07	,	N
+cecemilanjkt	,	N
+cemilan_jkt	,	N
+snysnack	,	N
+rabbitbakuljajan	,	N
+bakmieirian	,	N
+bakmiemantulll__bm	,	N
+kingsbakmie_jkt	,	N
+juraganasinan_jakarta	,	N
+asinan_enak_jakarta	,	N
+asinan77jkt	,	N
+mayfood_sby	,	N
+asinanjkt_mpok_may	,	N
+sweetafters.id	,	N
+makaronibonju.jakarta.utara	,	N
+snackhitsjakarta	,	N
+agen_resmi_jakarta	,	N
+inaikukujakarta	,	N
+dapurnaknan	,	N
+saladbuahenakjakarta	,	N
+egy.thehomemadecook	,	N
+siomay.mama.jakarta	,	N
+excellent_cakery,N
+rendangsuwir_rendangjengkol,N
+nasiudukbuhaji_tebetraya,N
+kolangkalingenyak,N
+devie512,N
+funkitchen18,N
+nasikuningsamarinda,N
+rumahmedina,N
+nasimandhiabah,N
+dimsum_nagechi,N
+kedai_ateu,N
+rumahdimsumlima,N
+dimsumrumahan_,N
+yuu.tomyam,N
+larasatis_kitchen,N
+yeisha_kitchen,N
+dapurlokarasa,N
+katering_makecih,N
+mbokharjuice_,N
+elikatering,N
+lindamalinda.shop,N
+dimsum99official,N
+99frozenfood,N
+nusantara_frozen_food,N
+katering_sultan,N
+ayam_bakar_aroma,N
+homey.bakerydonuts,N
+sayurmiung,N
+king_jualapaaja,N
+hogipempek,N
+teliecakes,N
+pupu_baker,N
+sofiakitchensnackyongki,N
+gudeg_asoy,N
+selvynath,N
+unimaura,N
+dapur.ennyy888,N
+sugarsister.id,N
+presto.ema,N
+sinarfajar_catering,N
+rumahbarujabar,N
+beybiy_kidsfashion,N
+javacool_tehnik,N
+kochstrasseofficial,N
+alita_collection,N
+dapoer_mama_achi,N
+nitipkgokuy,N
+puddingrakhayung,N
+mamabaking_supplystore,N
+ovn.id,N
+dapur.winwins,N
+yens_eggtart,N
+keikoofood,N
+riche.baker,N
+santikitchen2020,N
+mels.bake,N
+bellehampers3,N
+estilo_kitchen,N
+aphokitchen,N
+drinkstime.id,N
+dessert_ximilu.hsu,N
+dapurwalet,N
+handoyo.quantum.property,N
+dapurnyonya.jkt,N
+tbkmakmurabadicibinong,N
+mikacakery,N
+ciakpoh.id,N
+kims.cakery,N
+sayur.onlinejkt,N
+tanaman.buah_dalam.pot,N
+hakasima_shop,N
+papadedeshop,N
+tekateknika,N
+mamiohealthy,N
+boothcontainercustom,N
+tekateknika.official,N
+dracho_artisanchoco,N
+tiana.bakes,N
+idn.nibbles,N
+pan_pansnack,N
+jagoanpetok,N
+fiec21_m9,N
+yanti.ha,N
+kezia_santi,N
+fleur.de.caca,N
+pangsitedun	,	N
+kebuli_aljabar	,	N
+kebulihabibie_slipi	,	N
+ayambakarmadu2saudara	,	N
+ayambakarpelita	,	N
+ayamkremesjogja	,	N
+ayam_goreng_levana	,	N
+kuebasah_enak	,	N
+rendang.iin	,	N
+rumahboi.id	,	N
+asinanserba15000	,	N
+asinan_sayur_asyik_rasanya	,	N
+gyleasure,N
+jojosbakeology,N
+madooindonesia,N
+lulusky.id,N
+ngohiangomarini,N
+makeu688,N
+kolkalday_,N
+enklaserpong.id,N
+dafagiantara,N
+diyansi_,N
+arminadaily_endang_tw,N
+aesthecia_clinic,N
+jenita.sari.146,N
+bshoeslaundry,N
+thecreators.studio,N
+utamarayafrozen,N
+bubblasse_clothing,N
+infokuliner.jakarta,N
+supermarket_online25,N
+juicyjuicejkt,N
+misivegetable,N
+eka.ramadanti.566,N
+kartikasalad_puding,N
+azizahvictoryduasinga,N
+oy_tumbler,N
+keday_momydy,N
+ennya.haris,N
+donat.doremi,N
+oceano.indonesia,N
+phartospoetress,N
+aleshashop2893,N
+kebuuli_yaamaan,N
+saladbuah_arsen,N
+lawuhijabfashion,N
+dapur_chiku,N
+meti_ruzainara,N
+msglow_bilzaqstore,N
+deden_darul_qutnie,N
+littlekoko_,N
+satetaichanbangmamancilegonn,N
+eatmebyvane,N
+ffstore14,N
+zhabinna_by.khaira,N
+angga_design,N
+bebekmadura_frozen,N
+randa_bakmi_grilled_macaroni,N
+indahciptasentosa,N
+anugerahfurnitureid,N
+ross.taste,N
+fatwego,N
+myjellyart.bali,N
+sew_id,N
+doyankebab,N
+bintisolikha,N
+abumusa_fashion,N
+abumusa_bookstore,N
+dapoermama_shera,N
+susiniusi,N
+rengginang_nenek,N
+cemilangaluhenak,N
+dapoermarcelle,N
+posing.etc,N
+happytreasureland,N
+oishibento.jkt,N
+garasiaquarium,N
+kotakcustom_ku,N
+dapurcinta999,N
+holly.claire.valentina,N
+bayamcriispy_,N
+_kripikkaca,N
+roomdecor_ns,N
+akamsi.collection,N
+femaleshopp_id,N
+mieayam_3saudara,N
+tah.cris__,N
+rumahtisu33_,N
+abi.ngemil,N
+dlimakitchen_bsd,N
+rafa_partners,N
+pudikitchen,N
+peekupmarket,N
+fluwelmarket,N
+upaupi.kiddo,N
+rindubundo,N
+abadi.soesman.official,N
+bakmijhon1,N
+tereskitchens,N
+keikeu.cakes,N
+international_melawai,N
+gbhmelawai,N
+gladiresikmusicstore,N
+aneka.tahu_paksuarnao,N
+pcmsbintaro,N
+cosmic_customdesign,N
+sumberiramaofficial,N
+minangbravo,N
+inrockwetrust_rockers,N
+sumberiramainstrument,N
+sumberiramasound,N
+ahmadguitarzan,N
+i.x_official,N
+fitriautami_ai,N
+jesie.muse,N
+preloved.sise,N
+apriljasmine_lemon_tulungagung,N
+reseputi.lpg,N
+rn.laksana,N
+rumahproduksiestu,N
+dapur.terazza,N
+draw.a.cake,N
+endahkristianingrum,N
+nuryati.s9,N
+makembar12,N
+pempekmima,N
+kelaskursusjakarta,N
+laryskitchen_bylilis,N
+toembasbylyza,N
+ala_abata,N
+tungkusaya,N
+lilawilyana,N
+narninurn,N
+lisa_dessert2,N
+cakededali,N
+ike_boga,N
+sticksidiah,N
+chatlea.collection,N
+qaykounkitchen,N
+vircoan,N
+alldarkitchen,N
+adhelovejell,N
+ariesetiadi1980,N
+d_arfini,N
+dapoerpinang,N
+mak_goring,N
+oleholehbangzazri,N
+dapurtehtety,N
+nafnablemonic,N
+rafisnack,N
+trylicious_id,N
+utarisuzanbalqis,N
+rumahrempahnoni,N
+sadiahtalithaaa,N
+dapoerf4arie,N
+kartonbox_dalian,N
+nasi_kebuli_betawi,N
+yuna_imyuna,N
+gallery_adiba,N
+jaliasmar,N
+dapurbetawimimi,N
+opiskebab,N
+aniissa_olshop,N
+ach_ramdhani,N
+leche_id,N
+putricatering.id,N
+kerajinanbambucimahi,N
+l.y.collection83,N
+tntbags_andsouvenir,N
+event_photo_vidiografy,N
+eo_bazaarjakarta,N
+omahsnack_lusi,N
+kindalittleshop,N
+teguh_furniturejepara,N
+maswidoyoshop,N
+ace_rawamangun,N
+infokemayoran,N
+busana_muslim_2020,N
+kursusbahasaarabdalwa,N
+satomotor.id,N
+afwindimsum,N
+nyonyadimsum,N
+sorban_import,N
+siti_shop_grosir,N
+hana_elco,N
+yeyeherba,N
+awaludin_store,N
+saffana_herbal,N
+rumah.loka,N
+foodbycai,N
+bangkid.konveksi,N
+anjalivegan,N
+kantin_pafu,N
+rumahsayuroni,N
+loving.hut.denpasar,N
+sobatgift.qu,N
+wungu_store,N
+mak_ovin,N
+collagenclinic.indo,N
+albaraglutenfree,N
+ichantik_icha,N
+modernhospitalgz,N
+butiqginda_silihwangispeed200,N
+mamam_cookies,N
+bobayaga.kbnnas,N
+waroengazka17,N
+daribumi.co,N
+weekendbaker_bydhanislicious,N
+griyaharsi,N
+betta.betawimodern,N
+bursum_surupandan,N
+nonakidsfashion,N
+jacket_q1,N
+karya.bu.didik,N
+kebuli_arafah,N
+madlove_loveforfood,N
+zafood_risol_pamulang,N
+ichasiska509,N
+miekembang,N

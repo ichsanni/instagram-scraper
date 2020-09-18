@@ -67,6 +67,7 @@ def see_following():
     global driver
     for acc in range(len(crawling_list)):
         username, _status = crawling_list.pop(0)
+        print("-----" + username)
         str_acc = ''.join(username)
         fixed_str = re.sub(r'^"|\s*|"$', '',  str_acc)
         link = "https://www.instagram.com/" + fixed_str
@@ -100,7 +101,7 @@ def see_following():
             current_acc = a
             get_account(current_acc)
         following_list = []
-        finished_acc.append(username, 'C'])
+        finished_acc.append([username, 'C'])
         time.sleep(5)
 
 def get_account(link):
