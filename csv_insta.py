@@ -12,7 +12,7 @@ import re
 keywords = []
 global account_scraped
 account_scraped = 1
-with open('following_acc.csv', newline='') as key:
+with open('new_follow.csv', newline='') as key:
     print("Reading keyword.csv")
     key_data = csv.reader(key)
     for row in key_data:
@@ -56,6 +56,7 @@ def get_account(link):
     global driver
     try:
         driver.get(link)
+        global iteration_count
         global current_acc
         current_acc = link
         bio_pr = ec.presence_of_element_located((By.CSS_SELECTOR, 'div.-vDIg'))
@@ -65,6 +66,7 @@ def get_account(link):
         rm_d = re.sub(r'\D', '', bio.text)
         prog = re.search(r'(08|628)\d{8,10}', rm_d)
         if prog:
+            iteration_count = 0
             follower_count = driver.find_element_by_css_selector('ul li a span')
             fol = int(follower_count.text)
             acc_name = driver.find_element_by_css_selector('h2')
@@ -91,13 +93,20 @@ def get_account(link):
         print("follower exceeds 999")
         pass
     except TimeoutException:
-        print("blocked, sleep for 2 hours")
-        driver.close()
-        print(time.asctime())
-        time.sleep(7200)
-        print("reopening driver")
-        open_driver()
-        get_account(current_acc)
+        global iteration_count
+        if iteration_count < 1:
+            pass
+            iteration_count=1
+        else:
+            print("blocked, sleep for 3 hours")
+            iteration_count=0
+            time.sleep(1800)
+            driver.close()
+            print(time.asctime())
+            time.sleep(10800)
+            print("reopening driver")
+            open_driver()
+            get_account(current_acc)
     except NoSuchElementException:
         print("user name not found")
         pass

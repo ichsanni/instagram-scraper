@@ -50,7 +50,7 @@ def open_driver(first_login=False):
         driver.execute_script("arguments[0].click();", not_now[1])
         global iteration_count
         for query in keywords:
-            q = ''.join(query) + " depok"
+            q = ''.join(query) + " bogor"
             search(q)
             driver.close()
             print(time.asctime())

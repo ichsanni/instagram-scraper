@@ -83,7 +83,7 @@ def see_following():
             while display < int(following_amount):
                 if display < 100:
                     first = driver.find_elements_by_css_selector("a.FPmhX")
-                    first[0].send_keys(Keys.PAGE_DOWN * 5)
+                    first[0].send_keys(Keys.PAGE_DOWN*5)
                     time.sleep(5)
                     display = len(first)
                     print("display: " + str(display))
@@ -131,7 +131,7 @@ def get_account(link):
             print(raw_data)
             global new_acc
             new_acc.append([acc_name.text, 'N'])
-            with open('instagram_data8.csv', 'a+', newline='') as append_data:
+            with open('instagram_data10.csv', 'a+', newline='') as append_data:
                 append_this = csv.writer(append_data)
                 append_this.writerow(raw_data)
             time.sleep(15)
