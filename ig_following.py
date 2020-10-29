@@ -72,7 +72,6 @@ def see_following():
         fixed_str = re.sub(r'^"|\s*|"$', '',  str_acc)
         link = "https://www.instagram.com/" + fixed_str
         driver.get(link)
-        time.sleep(5)
         following_button = driver.find_element_by_css_selector("a.-nal3[href='/"+ fixed_str + "/following/'] span")
         following_amount = following_button.text
         driver.execute_script("arguments[0].click();", following_button)
@@ -92,7 +91,6 @@ def see_following():
         except ValueError as val:
             print(val)
             print("passing")
-            pass
         get_following = driver.find_elements_by_css_selector("a.FPmhX")
         global following_list
         for z in get_following:
@@ -112,12 +110,12 @@ def get_account(link):
         current_acc = link
         bio_pr = ec.presence_of_element_located((By.CSS_SELECTOR, 'div.-vDIg'))
         wdw(driver, 15).until(bio_pr)
-        time.sleep(45)
+        time.sleep(20)
         bio = driver.find_element_by_css_selector('div.-vDIg')
         rm_d = re.sub(r'\D', '', bio.text)
         prog = re.search(r'(08|628)\d{8,10}', rm_d)
         if prog:
-            follower_count = driver.find_element_by_css_selector('ul li a span')
+            follower_count = driver.find_element_by_css_selector('span.g47SY')
             fol = int(follower_count.text)
             acc_name = driver.find_element_by_css_selector('h2')
             rm_nl = re.sub(r'\n', '', bio.text)
@@ -134,7 +132,7 @@ def get_account(link):
             with open('instagram_data10.csv', 'a+', newline='') as append_data:
                 append_this = csv.writer(append_data)
                 append_this.writerow(raw_data)
-            time.sleep(15)
+            time.sleep(10)
             global account_scraped
             account_scraped += 1
             print(account_scraped)
@@ -148,7 +146,7 @@ def get_account(link):
         print("blocked, sleep for 2 hours")
         driver.close()
         print(time.asctime())
-        time.sleep(14400)
+        time.sleep(10800)
         print("reopening driver")
         open_driver()
         get_account(current_acc)

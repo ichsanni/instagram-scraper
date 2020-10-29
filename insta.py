@@ -50,12 +50,15 @@ def open_driver(first_login=False):
         driver.execute_script("arguments[0].click();", not_now[1])
         global iteration_count
         for query in keywords:
-            q = ''.join(query) + " bogor"
-            search(q)
-            driver.close()
-            print(time.asctime())
-            time.sleep(1800)
-            open_driver()
+            city = ["Bekasi","Tangerang","Tangsel","Depok","Bogor","Jakarta"]
+            for c in city:
+                q = ''.join(query) + " " + c
+                search(q)
+                driver.close()
+                print(c + " has finished scraping, moving on.")
+                print(time.asctime())
+                time.sleep(1800)
+                open_driver()
 
 
 def search(kword):
@@ -70,6 +73,7 @@ def search(kword):
     account_lists = driver.find_elements_by_css_selector('a.yCE8d')
     for a in account_lists:
         target_addr.append(a.get_attribute('href'))
+    print("total acc: " + str(len(target_addr)))
     for addr in target_addr:
         escape_hashtag = re.search('/explore/', addr)
         if escape_hashtag is None:
@@ -84,12 +88,12 @@ def get_account(link):
         current_acc = link
         bio_pr = ec.presence_of_element_located((By.CSS_SELECTOR, 'div.-vDIg'))
         wdw(driver, 15).until(bio_pr)
-        time.sleep(30)
+        time.sleep(15)
         bio = driver.find_element_by_css_selector('div.-vDIg')
         rm_d = re.sub(r'\D', '', bio.text)
         prog = re.search(r'(08|628)\d{8,10}', rm_d)
         if prog:
-            follower_count = driver.find_element_by_css_selector('ul li a span')
+            follower_count = driver.find_element_by_css_selector('span.g47SY')
             fol = int(follower_count.text)
             acc_name = driver.find_element_by_css_selector('h2')
             rm_nl = re.sub(r'\n', '', bio.text)
@@ -102,18 +106,17 @@ def get_account(link):
             raw_data.append(uni_ascii)
             print(raw_data)
             time.sleep(30)
-            with open('instagram_data_depok.csv', 'a+', newline='') as append_data:
+            with open('instagram_data12.csv', 'a+', newline='') as append_data:
                 append_this = csv.writer(append_data)
                 append_this.writerow(raw_data)
             global account_scraped
             account_scraped += 1
             print(account_scraped)
+            time.sleep(15)
     except IndexError:
         print("no bio found")
-        pass
     except ValueError:
         print("follower exceeds 999")
-        pass
     except TimeoutException:
         print("blocked, sleep for 2 hours")
         driver.close()
@@ -122,9 +125,9 @@ def get_account(link):
         print("reopening driver")
         open_driver()
         get_account(current_acc)
-    except NoSuchElementException:
+    except NoSuchElementException as nsee:
+        print(nsee)
         print("user name not found")
-        pass
 
 
 open_driver(True)
