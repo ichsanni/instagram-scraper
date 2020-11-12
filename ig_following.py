@@ -71,8 +71,16 @@ def see_following():
         str_acc = ''.join(username)
         fixed_str = re.sub(r'^"|\s*|"$', '',  str_acc)
         link = "https://www.instagram.com/" + fixed_str
-        driver.get(link)
-        following_button = driver.find_element_by_css_selector("a.-nal3[href='/"+ fixed_str + "/following/'] span")
+        try:
+          driver.get(link)
+        except NoSuchElementException:
+          print("user not found")
+          pass
+        try:
+          following_button = driver.find_element_by_css_selector("a.-nal3[href='/"+ fixed_str + "/following/'] span")
+        except NoSuchElementException:
+          print("user has not followed anyone yet")
+          pass
         following_amount = following_button.text
         driver.execute_script("arguments[0].click();", following_button)
         time.sleep(5)
@@ -82,7 +90,7 @@ def see_following():
             while display < int(following_amount):
                 if display < 100:
                     first = driver.find_elements_by_css_selector("a.FPmhX")
-                    first[0].send_keys(Keys.PAGE_DOWN*5)
+                    first[0].send_keys(Keys.PAGE_DOWN)
                     time.sleep(5)
                     display = len(first)
                     print("display: " + str(display))
@@ -115,8 +123,8 @@ def get_account(link):
         rm_d = re.sub(r'\D', '', bio.text)
         prog = re.search(r'(08|628)\d{8,10}', rm_d)
         if prog:
-            follower_count = driver.find_element_by_css_selector('span.g47SY')
-            fol = int(follower_count.text)
+            follower_count = driver.find_elements_by_css_selector('span.g47SY')
+            fol = int(follower_count[1].text)
             acc_name = driver.find_element_by_css_selector('h2')
             rm_nl = re.sub(r'\n', '', bio.text)
             uni_ascii = rm_nl.encode('ascii', 'ignore')
@@ -184,5 +192,6 @@ except Exception as e:
         new_list.writerows(new_acc)
         new_acc = []
         print(e)
+        pass
 
 
