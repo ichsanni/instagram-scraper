@@ -75,12 +75,12 @@ def see_following():
           driver.get(link)
         except NoSuchElementException:
           print("user not found")
-          pass
+          continue
         try:
           following_button = driver.find_element_by_css_selector("a.-nal3[href='/"+ fixed_str + "/following/'] span")
         except NoSuchElementException:
           print("user has not followed anyone yet")
-          pass
+          continue
         following_amount = following_button.text
         driver.execute_script("arguments[0].click();", following_button)
         time.sleep(5)
@@ -192,6 +192,5 @@ except Exception as e:
         new_list.writerows(new_acc)
         new_acc = []
         print(e)
-        pass
 
 
