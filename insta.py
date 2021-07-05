@@ -32,12 +32,12 @@ def open_driver(first_login=False):
     login = ec.presence_of_element_located((By.NAME, 'username'))
     wdw(driver, 15).until(login)
     uname_field = driver.find_element_by_name('username')
-    username = '_sys32_exe'
+    username = ''
     for i in username:
         uname_field.send_keys(i)
         time.sleep(0.2)
     pword_field = driver.find_element_by_name('password')
-    password = 'sivispacem'
+    password = ''
     for i in password:
         pword_field.send_keys(i)
         time.sleep(0.4)
